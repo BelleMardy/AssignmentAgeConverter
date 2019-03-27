@@ -1,22 +1,23 @@
 package au.edu.jcu.cp3406.assignmentageconverter;
 
-import android.content.Intent;
+//https://www.centralvet.ca/senior-dog-wellness
+
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
 
 public class b_DogCalculator extends AppCompatActivity {
 
     SeekBar sb_weight;
     TextView val_weight;
+
     SeekBar sb_year;
     TextView val_year;
+
     SeekBar sb_month;
     TextView val_month;
 
@@ -82,7 +83,23 @@ public class b_DogCalculator extends AppCompatActivity {
         sb_year.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int year, boolean fromUser) {
+                val_year.setText(String.valueOf(year));
 
+
+                if (year == 0){
+                    TextView size_desc = (TextView) findViewById(R.id.display_year);
+                    size_desc.setText(getString(R.string.blank));
+                }
+
+                else if (year == 1) {
+                    TextView size_desc = (TextView) findViewById(R.id.display_year);
+                    size_desc.setText(getString(R.string.one_year));
+                }
+
+                else if (year > 1) {
+                    TextView size_desc = (TextView) findViewById(R.id.display_year);
+                    size_desc.setText(getString(R.string.years));
+                }
             }
 
             @Override
@@ -96,11 +113,24 @@ public class b_DogCalculator extends AppCompatActivity {
             }
         });
 
-        sb_month.setOnSeekBarChangeListener((new SeekBar.OnSeekBarChangeListener() {
+        sb_month.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int month, boolean fromUser) {
+                val_month.setText(String.valueOf(month));
 
+
+                if (month == 0) {
+                    TextView size_desc = (TextView) findViewById(R.id.display_month);
+                    size_desc.setText(getString(R.string.blank));
+                } else if (month == 1) {
+                    TextView size_desc = (TextView) findViewById(R.id.display_month);
+                    size_desc.setText(getString(R.string.month));
+                } else if (month > 1) {
+                    TextView size_desc = (TextView) findViewById(R.id.display_month);
+                    size_desc.setText(getString(R.string.months));
+                }
             }
+
 
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
@@ -111,7 +141,7 @@ public class b_DogCalculator extends AppCompatActivity {
             public void onStopTrackingTouch(SeekBar seekBar) {
 
             }
-        }));
+        });
     }
 
 

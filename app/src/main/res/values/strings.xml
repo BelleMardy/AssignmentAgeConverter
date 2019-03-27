@@ -24,6 +24,11 @@
     <string name="medium">Medium dog (9.07 kg to 22.7 kg)</string>
     <string name="large">Large dog (above 22.7 kg)</string>
     <string name="txt_year">Year(s)</string>
+    <string name="blank" />
+    <string name="one_year">year</string>
+    <string name="years">years</string>
+    <string name="month">month</string>
+    <string name="months">months</string>
 
 
 </resources><!-- <string name="activity_main_action_bar">Dog Age To Human Age Converter</string>

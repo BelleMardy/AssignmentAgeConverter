@@ -127,7 +127,7 @@
             android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/txt_years"
+            android:id="@+id/display_year"
             android:layout_width="68dp"
             android:layout_height="wrap_content"
 
@@ -179,7 +179,7 @@
 
 
         <TextView
-            android:id="@+id/value_year"
+            android:id="@+id/value_month"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -192,14 +192,12 @@
             android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/txt_years"
+            android:id="@+id/display_month"
             android:layout_width="68dp"
             android:layout_height="wrap_content"
-
             android:layout_marginTop="20dp"
             android:background="@color/white"
             android:fontFamily="@font/berkshire_swash"
-
             android:textAlignment="center"
             android:textColor="@color/blue"
             android:textSize="20sp" />
@@ -285,4 +283,3 @@
 
 </android.support.v7.widget.LinearLayoutCompat>
 
-    <!--android:onClick="sendHome"-->
