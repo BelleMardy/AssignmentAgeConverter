@@ -15,6 +15,10 @@ public class b_DogCalculator extends AppCompatActivity {
 
     SeekBar sb_weight;
     TextView val_weight;
+    SeekBar sb_year;
+    TextView val_year;
+    SeekBar sb_month;
+    TextView val_month;
 
     @Override
 
@@ -23,8 +27,17 @@ public class b_DogCalculator extends AppCompatActivity {
         setContentView(R.layout.b_dog_calculator);
 
         configurebutton_name();
-        sb_weight = findViewById(R.id.seekbar_weight);
-        val_weight = findViewById(R.id.value_weight);
+
+
+
+        sb_weight = this.findViewById(R.id.seekbar_weight);
+        val_weight = this.findViewById(R.id.value_weight);
+
+        sb_year = this.findViewById(R.id.seekbar_year);
+        val_year = this.findViewById(R.id.value_year);
+
+        sb_month = this.findViewById(R.id.seekbar_month);
+        val_month = this.findViewById(R.id.value_month);
 
         sb_weight.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
 
@@ -65,6 +78,40 @@ public class b_DogCalculator extends AppCompatActivity {
             public void onStopTrackingTouch(SeekBar sb_weight) {
             }
         });
+
+        sb_year.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int year, boolean fromUser) {
+
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+
+        sb_month.setOnSeekBarChangeListener((new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int month, boolean fromUser) {
+
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        }));
     }
 
 
