@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="white">#fafafb</color>
+    <color name="background_app_info">#b3f0f211</color>
+    <color name="main_activity_info_text">#1ff0b6</color>
+    <color name="blue">#1142f2</color>
+    <color name="black">#010615</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="red">#FF0000</color>
+    <color name="grey">#b0aeae</color>
+
+</resources>
