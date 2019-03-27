@@ -19,16 +19,17 @@
     <string name="button_calculate">Calculate\nHuman Years</string>
     <string name="result">Human Age</string>
     <string name="weight_result">Weight</string>
-    <string name="small">Small Dog (up to 9.06 kg</string>
+    <string name="small">Small dog (under 9.9 kg)</string>
     <string name="no_age">No weight entered</string>
-    <string name="medium">Medium dog (9.07 kg to 22.7 kg)</string>
-    <string name="large">Large dog (above 22.7 kg)</string>
+    <string name="medium">Medium dog (10 kg to 24.9 kg)</string>
+    <string name="large">Large dog (25 kg to 39.9 kg)</string>
     <string name="txt_year">Year(s)</string>
     <string name="blank" />
     <string name="one_year">year</string>
     <string name="years">years</string>
     <string name="month">month</string>
     <string name="months">months</string>
+    <string name="xlarge">X-Large dog (over 40 kg)</string>
 
 
 </resources><!-- <string name="activity_main_action_bar">Dog Age To Human Age Converter</string>

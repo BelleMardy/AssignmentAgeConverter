@@ -90,7 +90,7 @@
             android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:background="@color/white"
-            android:max="3" />
+            android:max="4" />
 
     </LinearLayout>
 
@@ -155,7 +155,7 @@
             android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:background="@color/white"
-            android:max="16" />
+            android:max="18" />
 
     </LinearLayout>
 

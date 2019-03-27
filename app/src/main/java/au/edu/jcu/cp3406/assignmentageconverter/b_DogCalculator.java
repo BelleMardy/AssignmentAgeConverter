@@ -49,6 +49,7 @@ public class b_DogCalculator extends AppCompatActivity {
                 int dog_size_small = 1;
                 int dog_size_medium = 2;
                 int dog_size_large = 3;
+                int dog_size_xlarge = 4;
 
                 if (dog_size == dog_size_null){
                     TextView size_desc = (TextView) findViewById(R.id.size_type);
@@ -68,6 +69,10 @@ public class b_DogCalculator extends AppCompatActivity {
                 else if (dog_size == dog_size_large) {
                     TextView size_desc = (TextView) findViewById(R.id.size_type);
                     size_desc.setText(getString(R.string.large));
+                }
+                else if (dog_size == dog_size_xlarge) {
+                    TextView size_desc = (TextView) findViewById(R.id.size_type);
+                    size_desc.setText(getString(R.string.xlarge));
                 }
             }
 
