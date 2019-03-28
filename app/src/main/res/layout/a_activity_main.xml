@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/puppy_with_colour"
+    android:background="@drawable/img_paint_covered_puppy"
     android:orientation="vertical"
     tools:context=".a_MainActivity">
 
@@ -14,7 +14,7 @@
 
 
         <TextView
-            android:id="@+id/activity_unit_converter_action_bar"
+            android:id="@+id/header_age_converter"
             android:layout_width="422dp"
             android:layout_height="76dp"
             android:fontFamily="@font/berkshire_swash"

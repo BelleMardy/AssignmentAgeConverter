@@ -12,18 +12,18 @@ import android.widget.TextView;
 
 public class b_DogCalculator extends AppCompatActivity {
 
-    SeekBar sb_weight;
-    TextView val_weight;
+    SeekBar sb_weight; // define variable for Seekbar weight (relates to b_dog_calculator)
+    TextView val_weight; // define variable for TextView value weight (relates to b_dog_calculator)
 
-    SeekBar sb_year;
-    TextView val_year;
+    SeekBar sb_year; // define variable for Seekbar year (relates to b_dog_calculator)
+    TextView val_year; // define variable for TextView value year (relates to b_dog_calculator)
 
-    SeekBar sb_month;
-    TextView val_month;
+    SeekBar sb_month; // define variable for Seekbar month (relates to b_dog_calculator)
+    TextView val_month; // define variable for TextView value month (relates to b_dog_calculator)
 
-    int val_dog_size;
-    int val_dog_year;
-    int val_dog_month;
+    int val_dog_size; // define variable for value of dog weight (relates to (b_DogCalulator)
+    int val_dog_year; // define variable for value of dog age in year/s (relates to (b_DogCalulator)
+    int val_dog_month; // define variable for value of dog age in month/s (relates to (b_DogCalulator)
 
     @Override
 
@@ -31,11 +31,10 @@ public class b_DogCalculator extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.b_dog_calculator);
 
-        configurebutton_name();
+        configurebutton_name(); // refer to OnClick button to change screens
 
-
-        sb_weight = this.findViewById(R.id.seekbar_weight);
-        val_weight = this.findViewById(R.id.value_weight);
+        sb_weight = this.findViewById(R.id.seekbar_weight); // define variable for seekbar weight b_dog_calculator
+        val_weight = this.findViewById(R.id.value_seekbar_weight); // define variable for text weight b_dog_calculator
 
         sb_year = this.findViewById(R.id.seekbar_year);
         val_year = this.findViewById(R.id.value_year);
@@ -71,9 +70,8 @@ public class b_DogCalculator extends AppCompatActivity {
                     TextView size_desc = (TextView) findViewById(R.id.size_type);
                     size_desc.setText(getString(R.string.xlarge));
                 }
-                val_dog_size = dog_size;
-
-                age_output();
+                val_dog_size = dog_size;// defined variable for weight value
+                age_output(); // end seekbar year class
             }
 
             @Override
@@ -82,8 +80,8 @@ public class b_DogCalculator extends AppCompatActivity {
 
             @Override
             public void onStopTrackingTouch(SeekBar sb_weight) {
-            }
-        });
+            } // end seekbar weight onStopTrackingTouch
+        }); // end seekbar weight class
 
         sb_year.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
@@ -109,8 +107,8 @@ public class b_DogCalculator extends AppCompatActivity {
                 else {
                     sb_month.setEnabled(true);
                 }
-                val_dog_year = year;
-                age_output();
+                val_dog_year = year; // defined variable for year value
+                age_output(); // end seekbar year class
             }
 
 
@@ -122,8 +120,8 @@ public class b_DogCalculator extends AppCompatActivity {
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
 
-            }
-        });
+            }  // end public void onClick
+        }); // end btn_home CnClickListener
 
         sb_month.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
@@ -141,22 +139,22 @@ public class b_DogCalculator extends AppCompatActivity {
                     TextView size_desc = (TextView) findViewById(R.id.display_month);
                     size_desc.setText(getString(R.string.months));
                 }
-                val_dog_month = month;
-                age_output();
-            }
+                val_dog_month = month; // defined variable for month value
+                age_output(); // result of age_output Class
+            } // end seekbar month onProgressChange
 
 
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
 
-            }
+            } // end seebar month onStartTrackingTouch
 
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
 
-            }
-        });
-    }
+            } // end seekbar month onStopTrackingTouch
+        }); // end seekbar month class
+    } // end protected onCreate class
 
     public void age_output() {
 
@@ -164,8 +162,7 @@ public class b_DogCalculator extends AppCompatActivity {
         int result = c_CalculateAge.age_cal(val_dog_size, val_dog_year, val_dog_month);
 
         val_age.setText(String.valueOf(result));
-
-    }
+    } // end public age_output class
 
     private void configurebutton_name() {
         Button btn_home = (Button) findViewById(R.id.button_home);
@@ -173,8 +170,8 @@ public class b_DogCalculator extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 finish();
-            }
-        });
-    }
-}
+            }  // end public void onClick
+        }); // end btn_home CnClickListner
+    } // end private configurebutton_name class
+} // end public b_DogCalculator class extends
 

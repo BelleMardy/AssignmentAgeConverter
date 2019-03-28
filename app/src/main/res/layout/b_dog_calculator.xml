@@ -2,11 +2,11 @@
 <android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/change_colour"
     android:layout_width="410dp"
     android:layout_height="match_parent"
-    android:background="@drawable/puppy_with_colour"
+    android:background="@drawable/img_paint_covered_puppy"
     android:orientation="vertical"
-    android:id="@+id/change_colour"
     tools:context=".a_MainActivity">
 
     <LinearLayout
@@ -15,7 +15,7 @@
 
 
         <TextView
-            android:id="@+id/activity_unit_converter_action_bar"
+            android:id="@+id/header_age_converter"
             android:layout_width="422dp"
             android:layout_height="76dp"
             android:fontFamily="@font/berkshire_swash"
@@ -29,7 +29,7 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/txt_weight"
+            android:id="@+id/header_select_dog_weight"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="85dp"
@@ -49,7 +49,7 @@
 
 
         <TextView
-            android:id="@+id/value_weight"
+            android:id="@+id/value_seekbar_weight"
             android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -103,7 +103,7 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/text_year"
+            android:id="@+id/header_dog_age_years"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
