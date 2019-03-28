@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/puppy_with_colour"
     android:orientation="vertical"
+    android:id="@+id/change_colour"
     tools:context=".a_MainActivity">
 
     <LinearLayout
@@ -89,7 +90,9 @@
             android:layout_marginTop="20dp"
             android:layout_marginRight="10dp"
             android:layout_weight="1"
-            android:background="@color/white"
+            android:background="@drawable/custom_seekbar"
+
+
             android:max="4" />
 
     </LinearLayout>
@@ -154,7 +157,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginRight="10dp"
             android:layout_weight="1"
-            android:background="@color/white"
+            android:background="@drawable/custom_seekbar"
             android:max="18" />
 
     </LinearLayout>
@@ -219,7 +222,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginRight="10dp"
             android:layout_weight="1"
-            android:background="@color/white"
+            android:background="@drawable/custom_seekbar"
             android:max="11" />
 
 
