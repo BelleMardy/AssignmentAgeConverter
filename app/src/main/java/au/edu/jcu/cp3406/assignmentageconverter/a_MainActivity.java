@@ -5,11 +5,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.content.Intent;
 import android.widget.Button;
-import android.widget.SeekBar;
-import android.widget.TextView;
-import android.widget.Toast;
 
-public class a_MainActivity extends AppCompatActivity{
+public class a_MainActivity extends AppCompatActivity {
 
     @Override
 
@@ -21,15 +18,15 @@ public class a_MainActivity extends AppCompatActivity{
 
     }
 
-private void configurebutton_calculate() {
-    Button btn_calculate = (Button) findViewById(R.id.button_calculate);
-    btn_calculate.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            startActivity(new Intent(a_MainActivity.this, b_DogCalculator.class));
-        }
-    });
-}
+    private void configurebutton_calculate() {
+        Button btn_calculate = findViewById(R.id.text_calculate_human_year);
+        btn_calculate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(a_MainActivity.this, b_DogCalculator.class));
+            }
+        });
+    }
 }
 
 

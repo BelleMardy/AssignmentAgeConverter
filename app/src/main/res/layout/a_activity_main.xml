@@ -47,7 +47,7 @@
 
 
         <Button
-            android:id="@+id/button_calculate"
+            android:id="@+id/text_calculate_human_year"
             android:layout_width="124dp"
             android:layout_height="40dp"
             android:layout_marginLeft="140dp"
