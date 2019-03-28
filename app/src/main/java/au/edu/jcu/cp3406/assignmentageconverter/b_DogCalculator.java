@@ -154,7 +154,7 @@ public class b_DogCalculator extends AppCompatActivity {
     public void age_output() {
 
         TextView val_age = (TextView) findViewById(R.id.value_human_age);
-        int result = c_CalculateAge.age_cal(val_dog_size, val_dog_year, val_dog_month);
+        float result = c_CalculateAge.age_cal(val_dog_size, val_dog_year, val_dog_month);
 
         val_age.setText(String.valueOf(result));
     } // end public age_output class
