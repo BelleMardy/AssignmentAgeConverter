@@ -237,7 +237,7 @@
             android:layout_width="150dp"
             android:layout_height="60dp"
             android:layout_marginLeft="40dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="0dp"
             android:background="@color/yellow"
             android:fontFamily="@font/berkshire_swash"
             android:text="@string/button_calculate"
@@ -257,7 +257,7 @@
             android:hint="@string/result"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="20sp" />
+            android:textSize="40sp" />
 
     </LinearLayout>
 
