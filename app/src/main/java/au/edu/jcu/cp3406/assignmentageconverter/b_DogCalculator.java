@@ -6,8 +6,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
@@ -163,7 +161,7 @@ public class b_DogCalculator extends AppCompatActivity {
     public void age_output() {
 
         TextView val_age = (TextView) findViewById(R.id.human_age);
-        int result = c_calculate_age.age_cal(val_dog_size, val_dog_year, val_dog_month);
+        int result = c_CalculateAge.age_cal(val_dog_size, val_dog_year, val_dog_month);
 
         val_age.setText(String.valueOf(result));
 
