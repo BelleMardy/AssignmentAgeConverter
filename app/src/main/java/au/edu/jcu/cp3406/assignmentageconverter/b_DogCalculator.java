@@ -4,6 +4,8 @@ package au.edu.jcu.cp3406.assignmentageconverter;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.SeekBar;
@@ -163,7 +165,7 @@ public class b_DogCalculator extends AppCompatActivity {
         TextView val_age = (TextView) findViewById(R.id.value_human_age);
         float result = c_CalculateAge.age_cal(val_dog_size, val_dog_year, val_dog_month);
 
-        val_age.setText(String.valueOf(result + " years"));
+        val_age.setText(String.valueOf(result));
     } // end public age_output class
 
     private void configurebutton_name() {
@@ -175,5 +177,13 @@ public class b_DogCalculator extends AppCompatActivity {
             }  // end public void onClick
         }); // end btn_home CnClickListner
     } // end private configurebutton_name class
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu settings_menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate (R.menu.settings, settings_menu);
+        return true;
+    }
+
 } // end public b_DogCalculator class extends
 

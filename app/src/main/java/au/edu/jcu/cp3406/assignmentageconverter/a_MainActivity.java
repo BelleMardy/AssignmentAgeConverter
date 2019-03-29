@@ -2,9 +2,14 @@ package au.edu.jcu.cp3406.assignmentageconverter;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.content.Intent;
 import android.widget.Button;
+
+
 
 public class a_MainActivity extends AppCompatActivity {
 
@@ -16,6 +21,20 @@ public class a_MainActivity extends AppCompatActivity {
 
         configurebutton_calculate();
 
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu settings_menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate (R.menu.settings, settings_menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem change_background) {
+        switch (change_background.getItemId()) {
+            case R.id.settings:
+        }
+        return super.onOptionsItemSelected(change_background);
     }
 
     private void configurebutton_calculate() {

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
     package="au.edu.jcu.cp3406.assignmentageconverter">
 
     <application
@@ -9,14 +10,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".c_SettingsActivity"
-            android:label="@string/title_activity_c_settings"
-            android:parentActivityName=".a_MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="au.edu.jcu.cp3406.assignmentageconverter.a_MainActivity" />
-        </activity>
         <activity android:name=".a_MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,6 +24,11 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
+
     </application>
 
+
+
 </manifest>
+

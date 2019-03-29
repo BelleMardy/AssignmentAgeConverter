@@ -21,6 +21,8 @@
             android:fontFamily="@font/berkshire_swash"
             android:text="@string/header_age_converter"
             android:textAlignment="center"
+            android:background="@color/black"
+            android:textColor="@color/white"
             android:textSize="50sp" />
     </LinearLayout>
 
