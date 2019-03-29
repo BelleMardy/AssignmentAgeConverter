@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
+import java.math.BigDecimal;
+
 
 public class b_DogCalculator extends AppCompatActivity {
 
