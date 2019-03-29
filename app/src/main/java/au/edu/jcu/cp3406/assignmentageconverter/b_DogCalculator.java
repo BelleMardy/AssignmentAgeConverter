@@ -107,6 +107,11 @@ public class b_DogCalculator extends AppCompatActivity {
                 else {
                     sb_month.setEnabled(true);
                 }
+                if (year == 18) {
+                    sb_month.setEnabled(false);
+                    val_dog_month = 0;
+                    val_month.setText(Integer.toString(0));
+                }
                 val_dog_year = year; // defined variable for year value
                 age_output(); // end seekbar year class
             }
@@ -158,7 +163,7 @@ public class b_DogCalculator extends AppCompatActivity {
         TextView val_age = (TextView) findViewById(R.id.value_human_age);
         float result = c_CalculateAge.age_cal(val_dog_size, val_dog_year, val_dog_month);
 
-        val_age.setText(String.valueOf(result));
+        val_age.setText(String.valueOf(result + " years"));
     } // end public age_output class
 
     private void configurebutton_name() {

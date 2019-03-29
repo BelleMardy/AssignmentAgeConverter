@@ -6,10 +6,9 @@ public class c_CalculateAge {
 
 
     public static float age_cal(int dog_size, int year, int month) {
-        float total_months_in_year = 12;
-        float months_coverted_into_years = month/total_months_in_year;
-        float dogAge = year + months_coverted_into_years;
-        float small_dogSize = dog_size;
+
+
+
         float dogAge_small_1 = 7;
         float dogAge_small_2 = 13;
         float dogAge_small_3 = 20;
@@ -89,13 +88,37 @@ public class c_CalculateAge {
         float dogAge_xlarge_17 = 131;
         float dogAge_xlarge_18 = 139;
 
+        float total_months_in_year = 12;
+        float months_coverted_into_years = month / total_months_in_year;
+        float dogAge = year + months_coverted_into_years;
 
+        float dog_size_null = 0;
+        float dog_size_small = 1;
+        float dog_size_medium = 2;
+        float dog_size_large = 3;
+        float dog_size_xlarge = 4;
 
+        if (dog_size == dog_size_null) {
+            return 0;
+        }
+        if (dog_size == dog_size_small) {
+            return 1;
+        }
+        if (dog_size == dog_size_medium) {
+            return 2;
+        }
+        if (dog_size == dog_size_large) {
+            return 3;
+        }
+        if (dog_size == dog_size_xlarge) {
+            return 4;
+        }
 
 
 
         // converting to dog age BigDecimal to enable rounding DOWN
-        BigDecimal dogAge_RoundDownToWholeNumber = new BigDecimal(dogAge);
+
+        BigDecimal dogAge_RoundDownToWholeNumber = new BigDecimal(dog_size);
 
         // converting to dog age BigDecimal to enable rounding DOWN - 3 years 5 months
         BigDecimal age = dogAge_RoundDownToWholeNumber;
@@ -107,7 +130,7 @@ public class c_CalculateAge {
         dogAge_RoundDownToWholeNumber = dogAge_RoundDownToWholeNumber.setScale(0, BigDecimal.ROUND_DOWN);
 
         // rounding UP to nearest whole dog age eg 3.46 dog years = 4 years - test ok
-        dogAge_RoundUpToWholeNumber = dogAge_RoundUpToWholeNumber.setScale(0,BigDecimal.ROUND_UP);
+        dogAge_RoundUpToWholeNumber = dogAge_RoundUpToWholeNumber.setScale(0, BigDecimal.ROUND_UP);
 
 
         //convert rounded DOWN dog age to integer eg 3 dog years test ok
@@ -118,16 +141,16 @@ public class c_CalculateAge {
 
         /**calculate the difference between the dog age given less the dog age rounded DOWN
          eg 0.46 dog years = 3.46 dog years - 3 dog years years test ok*/
-        float dogAge_remainderDecimal = dogAge-dogAge_RoundDownToWholeNumber_Int;
+        float dogAge_remainderDecimal = dogAge - dogAge_RoundDownToWholeNumber_Int;
 
         // dog age in human year, ie 0 = 0 through to 18 = 20 eg 3 dog years = 24 years
-        int [] small_dog = {0,7,13,20,26,35,40,44,48,52,56,60,64,68,72,76,80,84,88};
+        int[] small_dog = {0, 7, 13, 20, 26, 35, 40, 44, 48, 52, 56, 60, 64, 68, 72, 76, 80, 84, 88};
 
         /** the difference between rounded UP dog age converted to human less rounded DOWN dog age converted to human years
-        4 human years = 4 dog years (28 human years) - 3 dog years (24 human years) test ok*/
+         4 human years = 4 dog years (28 human years) - 3 dog years (24 human years) test ok*/
 
 
-        return dogAge_remainderDecimal;
+        return total_months_in_year;
     }
 }
 
