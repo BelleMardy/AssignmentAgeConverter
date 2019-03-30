@@ -16,13 +16,6 @@ import au.edu.jcu.cp3406.assignmentageconverter.Helper.LocaleHelper;
 public class a_MainActivity extends AppCompatActivity {
 
 
-
-    @Override
-    protected void attachBaseContext (Context base){
-        super.attachBaseContext(LocaleHelper.onAttach(base,"en"));
-
-        }
-
             @Override
 
     protected void onCreate(Bundle savedInstanceState) {
