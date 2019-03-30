@@ -2,8 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item android:id="@+id/settings"
-        android:title="@string/change_app_background"
+    <item android:id="@+id/settings_english"
+        android:title="@string/language_english"
+        app:showAsAction="never"
+        android:textColor="@color/white"
+
+        />
+    <item android:id="@+id/settings_spanish"
+        android:title="@string/language_spanish"
         app:showAsAction="never"
         android:textColor="@color/white"
 

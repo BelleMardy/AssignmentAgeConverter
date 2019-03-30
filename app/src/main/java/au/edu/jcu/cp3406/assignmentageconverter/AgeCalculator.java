@@ -1,12 +1,10 @@
 package au.edu.jcu.cp3406.assignmentageconverter;
 
-import java.math.BigDecimal;
-
-public class c_CalculateAge {
+public class AgeCalculator {
 
 
     public static String age_cal(int dog_size, int year, int month) {
-        float new_month = convert_to_year.month_to_year_cal(month);
+        float new_month = MonthConverter.month_to_year_cal(month);
         float dogAge = year + new_month;
 
 
@@ -60,7 +58,7 @@ public class c_CalculateAge {
 
         float remainder_months_human_age = total_human_years - total_human_year_whole_year;
 
-        int human_months = (int) convert_to_year.year_to_ymonth_cal(remainder_months_human_age);
+        int human_months = (int) MonthConverter.year_to_ymonth_cal(remainder_months_human_age);
 
         String string_result = Integer.toString(total_human_year_whole_year);
         string_result = string_result + "years " + Integer.toString(human_months) + " months";
@@ -114,7 +112,7 @@ public class c_CalculateAge {
 // ---------------------------------------------------------------
 // package au.edu.jcu.cp3406.assignmentageconverter;
 //
-//public class c_CalculateAge {
+//public class AgeCalculator {
 //    public static int age_cal(int dog_size, int year, int month) {
 //
 //

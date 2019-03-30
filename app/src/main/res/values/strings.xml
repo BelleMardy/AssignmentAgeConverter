@@ -1,52 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <!--Home Layout-->
     <string name="app_name">Dog Age To Human Age Converter</string>
-    <string name="app_info_a_activity_main">The Dog Age to Human Age Calculator will calculate the
-    human age of your dog based on their weight and age.\n\n Press Calculate to continue.\n Select
-    puppy size based on kgs.\n Choose age in year(s) and month(s).</string>
-
-
-
-    <string name="button_submit">Calculate</string>
-
-    <!--Calculator Layout-->
-    <string name="header_age_converter">Age Converter</string>
-    <string name="button_home">Home</string>
+    <string name="instructions">The Dog Age to Human Age Calculator will calculate the
+                                human age of your dog based on their weight and age.
+                                Press begin to continue.\nSelect puppy size based on kgs.\n
+                                Select age in year(s) and month(s).</string>
+    <string name="begin">Begin</string>
     <string name="text_weight_range">Select Dog Weight</string>
     <string name="text_year_range">Select Dog Age - Year(s)</string>
     <string name="text_month_range">Select Dog Age - Month(s)</string>
-    <string name="button_calculate">Calculate\nHuman Years</string>
-    <string name="result"><font size="20">Human Age</font></string>
+    <string name="header_main">Age Converter</string>
+    <string name="button_home">Home</string>
+    <string name="button_calculate">Calculate Human Years</string>
+    <string name="result">Human Years</string>
     <string name="weight_result">Weight</string>
     <string name="small">Small dog (under 9.9 kg)</string>
     <string name="no_age">No weight entered</string>
     <string name="medium">Medium dog (10 kg to 24.9 kg)</string>
     <string name="large">Large dog (25 kg to 39.9 kg)</string>
     <string name="txt_year">Year(s)</string>
-    <string name="blank" />
+    <string name="blank" translatable="false">" "</string>
     <string name="one_year">year</string>
     <string name="years">years</string>
     <string name="month">month</string>
     <string name="months">months</string>
     <string name="xlarge">X-Large dog (over 40 kg)</string>
+    <string name="language_english">English</string>
+    <string name="language_spanish">Spanish</string>
+</resources>
 
-    <!--Menu Layout-->
-    <string name="change_app_background">Change Background</string>
+<!--<resources>-->
 
-
-</resources><!-- <string name="activity_main_action_bar">Dog Age To Human Age Converter</string>
-
-
-    <string name="dogNameInput">Puppy"'"s Name</string>
-    <string name="activity_main_submit">Submit</string>
-
-    <string name="provide_year">Years</string>
-    <string name="provide_month">Month</string>
-    <string name="year">Year</string>
+    <!--&lt;!&ndash;Home Layout&ndash;&gt;-->
+    <!--<string name="app_name">Dog Age To Human Age Converter</string>-->
+    <!--<string name="app_info_a_activity_main">The Dog Age to Human Age Calculator will calculate the-->
+    <!--human age of your dog based on their weight and age.\n\n Press Calculate to continue.\n Select-->
+    <!--puppy size based on kgs.\n Choose age in year(s) and month(s).</string>-->
 
 
-                          Small dog (under 9.07 kg)
-                      Medium dog (between 9.07 kg to 22.7 kg)
-                      Large dog (over 22.7 kg)-->
 
+    <!--<string name="begin">Calculate</string>-->
+
+    <!--&lt;!&ndash;Calculator Layout&ndash;&gt;-->
+    <!--<string name="header_age_converter">Age Converter</string>-->
+    <!--<string name="button_home">Home</string>-->
+    <!--<string name="text_weight_range">Select Dog Weight</string>-->
+    <!--<string name="text_year_range">Select Dog Age - Year(s)</string>-->
+    <!--<string name="text_month_range">Select Dog Age - Month(s)</string>-->
+    <!--<string name="button_calculate">Calculate\nHuman Years</string>-->
+    <!--<string name="result"><font size="20">Human Age</font></string>-->
+    <!--<string name="weight_result">Weight</string>-->
+    <!--<string name="small">Small dog (under 9.9 kg)</string>-->
+    <!--<string name="no_age">No weight entered</string>-->
+    <!--<string name="medium">Medium dog (10 kg to 24.9 kg)</string>-->
+    <!--<string name="large">Large dog (25 kg to 39.9 kg)</string>-->
+    <!--<string name="txt_year">Year(s)</string>-->
+    <!--<string name="blank" />-->
+    <!--<string name="one_year">year</string>-->
+    <!--<string name="years">years</string>-->
+    <!--<string name="month">month</string>-->
+    <!--<string name="months">months</string>-->
+    <!--<string name="xlarge">X-Large dog (over 40 kg)</string>-->
+
+    <!--&lt;!&ndash;Menu Layout&ndash;&gt;-->
+    <!--<string name="language_english">English</string>-->
+    <!--<string name="language_spanish">Spanish</string>-->
+
+
+<!--</resources>&lt;!&ndash; <string name="activity_main_action_bar">Dog Age To Human Age Converter</string>-->
+
+
+    <!--<string name="dogNameInput">Puppy"'"s Name</string>-->
+    <!--<string name="activity_main_submit">Submit</string>-->
+
+    <!--<string name="provide_year">Years</string>-->
+    <!--<string name="provide_month">Month</string>-->
+    <!--<string name="year">Year</string>-->
+
+
+                          <!--Small dog (under 9.07 kg)-->
+                      <!--Medium dog (between 9.07 kg to 22.7 kg)-->
+                      <!--Large dog (over 22.7 kg)&ndash;&gt;-->

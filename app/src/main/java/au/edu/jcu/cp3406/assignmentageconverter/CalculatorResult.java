@@ -11,19 +11,17 @@ import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-import java.math.BigDecimal;
 
+public class CalculatorResult extends AppCompatActivity {
 
-public class b_DogCalculator extends AppCompatActivity {
+    SeekBar sb_weight; // define variable for Seekbar weight (relates to activity_age_calculator)
+    TextView val_weight; // define variable for TextView value weight (relates to activity_age_calculator)
 
-    SeekBar sb_weight; // define variable for Seekbar weight (relates to b_dog_calculator)
-    TextView val_weight; // define variable for TextView value weight (relates to b_dog_calculator)
+    SeekBar sb_year; // define variable for Seekbar year (relates to activity_age_calculator)
+    TextView val_year; // define variable for TextView value year (relates to activity_age_calculator)
 
-    SeekBar sb_year; // define variable for Seekbar year (relates to b_dog_calculator)
-    TextView val_year; // define variable for TextView value year (relates to b_dog_calculator)
-
-    SeekBar sb_month; // define variable for Seekbar month (relates to b_dog_calculator)
-    TextView val_month; // define variable for TextView value month (relates to b_dog_calculator)
+    SeekBar sb_month; // define variable for Seekbar month (relates to activity_age_calculator)
+    TextView val_month; // define variable for TextView value month (relates to activity_age_calculator)
 
     int val_dog_size; // define variable for value of dog weight (relates to (b_DogCalulator)
     int val_dog_year; // define variable for value of dog age in year/s (relates to (b_DogCalulator)
@@ -33,12 +31,12 @@ public class b_DogCalculator extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.b_dog_calculator);
+        setContentView(R.layout.activity_age_calculator);
 
         configurebutton_name(); // refer to OnClick button to change screens
 
-        sb_weight = this.findViewById(R.id.seekbar_weight); // define variable for seekbar weight b_dog_calculator
-        val_weight = this.findViewById(R.id.value_seekbar_weight); // define variable for text weight b_dog_calculator
+        sb_weight = this.findViewById(R.id.seekbar_weight); // define variable for seekbar weight activity_age_calculator
+        val_weight = this.findViewById(R.id.value_seekbar_weight); // define variable for text weight activity_age_calculator
 
         sb_year = this.findViewById(R.id.seekbar_year);
         val_year = this.findViewById(R.id.value_seekbar_year);
@@ -163,7 +161,7 @@ public class b_DogCalculator extends AppCompatActivity {
     public void age_output() {
 
         TextView val_age = (TextView) findViewById(R.id.value_human_age);
-        String result = c_CalculateAge.age_cal(val_dog_size, val_dog_year, val_dog_month);
+        String result = AgeCalculator.age_cal(val_dog_size, val_dog_year, val_dog_month);
 
         val_age.setText(String.valueOf(result));
     } // end public age_output class
@@ -185,5 +183,5 @@ public class b_DogCalculator extends AppCompatActivity {
         return true;
     }
 
-} // end public b_DogCalculator class extends
+} // end public CalculatorResult class extends
 

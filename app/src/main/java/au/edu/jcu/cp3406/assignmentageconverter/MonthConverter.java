@@ -1,6 +1,6 @@
 package au.edu.jcu.cp3406.assignmentageconverter;
 
-public class convert_to_year {
+public class MonthConverter {
 
 
     public static float month_to_year_cal (int month) {
