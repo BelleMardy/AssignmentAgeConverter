@@ -257,7 +257,7 @@
             android:hint="@string/result"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="40sp" />
+            android:textSize="20sp" />
 
     </LinearLayout>
 
