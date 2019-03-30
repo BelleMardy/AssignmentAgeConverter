@@ -1,5 +1,6 @@
 package au.edu.jcu.cp3406.assignmentageconverter;
 
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -9,11 +10,20 @@ import android.view.View;
 import android.content.Intent;
 import android.widget.Button;
 
+import au.edu.jcu.cp3406.assignmentageconverter.Helper.LocaleHelper;
 
 
 public class a_MainActivity extends AppCompatActivity {
 
+
+
     @Override
+    protected void attachBaseContext (Context base){
+        super.attachBaseContext(LocaleHelper.onAttach(base,"en"));
+
+        }
+
+            @Override
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
