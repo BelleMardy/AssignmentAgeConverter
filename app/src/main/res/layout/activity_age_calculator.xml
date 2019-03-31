@@ -23,7 +23,7 @@
             android:textAlignment="center"
             android:background="@color/black"
             android:textColor="@color/white"
-            android:textSize="50sp" />
+            app:autoSizeTextType="uniform"  />
     </LinearLayout>
 
     <LinearLayout
@@ -42,7 +42,7 @@
             android:textAlignment="center"
             android:textAllCaps="false"
             android:textColor="@color/white"
-            android:textSize="20dp" />
+            app:autoSizeTextType="uniform"  />
     </LinearLayout>
 
     <LinearLayout
@@ -61,7 +61,7 @@
 
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="20sp" />
+            app:autoSizeTextType="uniform" />
 
         <TextView
             android:id="@+id/text_size_description"
@@ -74,7 +74,7 @@
             android:fontFamily="@font/berkshire_swash"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="20sp" />
+            app:autoSizeTextType="uniform" />
 
 
     </LinearLayout>
@@ -116,7 +116,7 @@
             android:textAlignment="center"
             android:textAllCaps="false"
             android:textColor="@color/white"
-            android:textSize="20dp" />
+            app:autoSizeTextType="uniform" />
 
         <TextView
             android:id="@+id/value_seekbar_year"
@@ -128,7 +128,7 @@
             android:fontFamily="@font/berkshire_swash"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="20sp" />
+            app:autoSizeTextType="uniform" />
 
         <TextView
             android:id="@+id/text_description_year"
@@ -141,7 +141,7 @@
 
             android:textAlignment="center"
             android:textColor="@color/blue"
-            android:textSize="20sp" />
+            app:autoSizeTextType="uniform" />
     </LinearLayout>
 
     <LinearLayout
@@ -179,7 +179,7 @@
             android:textAlignment="center"
             android:textAllCaps="false"
             android:textColor="@color/white"
-            android:textSize="20dp" />
+            app:autoSizeTextType="uniform" />
 
 
         <TextView
@@ -192,7 +192,7 @@
             android:fontFamily="@font/berkshire_swash"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="20sp" />
+            app:autoSizeTextType="uniform" />
 
         <TextView
             android:id="@+id/text_description_month"
@@ -203,7 +203,7 @@
             android:fontFamily="@font/berkshire_swash"
             android:textAlignment="center"
             android:textColor="@color/blue"
-            android:textSize="20sp" />
+            app:autoSizeTextType="uniform" />
 
 
     </LinearLayout>
@@ -244,7 +244,7 @@
             android:textAlignment="center"
             android:textAllCaps="false"
             android:textColor="@color/black"
-            android:textSize="20dp" />
+            app:autoSizeTextType="uniform" />
 
         <TextView
             android:id="@+id/value_human_age"
@@ -257,7 +257,7 @@
             android:hint="@string/result"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="20sp" />
+            app:autoSizeTextType="uniform" />
 
     </LinearLayout>
 

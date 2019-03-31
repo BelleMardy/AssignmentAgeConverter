@@ -12,7 +12,7 @@
     <string name="header_main">Age Converter</string>
     <string name="button_home">Home</string>
     <string name="button_calculate">Calculate Human Years</string>
-    <string name="result">Human Years</string>
+    <string name="result"><font size="20">Human Years</font></string>
     <string name="weight_result">Weight</string>
     <string name="small">Small dog (under 9.9 kg)</string>
     <string name="no_age">No weight entered</string>
@@ -27,6 +27,7 @@
     <string name="xlarge">X-Large dog (over 40 kg)</string>
     <string name="language_english">English</string>
     <string name="language_spanish">Spanish</string>
+    <string name="hint"><font size="20">Human Years</font></string>
 </resources>
 
 <!--<resources>-->

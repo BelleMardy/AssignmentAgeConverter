@@ -2,6 +2,7 @@ package au.edu.jcu.cp3406.assignmentageconverter;
 
 //https://www.centralvet.ca/senior-dog-wellness
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -10,6 +11,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.TextView;
+
+import au.edu.jcu.cp3406.assignmentageconverter.Helper.LocaleHelper;
+import io.paperdb.Paper;
 
 
 public class CalculatorResult extends AppCompatActivity {
@@ -28,6 +32,13 @@ public class CalculatorResult extends AppCompatActivity {
     int val_dog_month; // define variable for value of dog age in month/s (relates to (b_DogCalulator)
 
     @Override
+
+    protected void attachBaseContext (Context newBase) {
+        super.attachBaseContext(LocaleHelper.onAttach(newBase, "en"));
+    }
+
+
+        @Override
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
