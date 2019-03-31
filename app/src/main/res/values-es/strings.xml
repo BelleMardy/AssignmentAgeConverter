@@ -16,9 +16,9 @@
     <string name="text_weight_range">Seleccione el peso del perro</string>
     <string name="text_year_range">Seleccione la edad del perro - Año(s)</string>
     <string name="text_month_range">Seleccione la edad del perro - Mes(es)</string>
-    <string name="button_calculate">Calcular\nAños humanos</string>
+    <string name="text_calculate_human_year">Calcular\nAños humanos</string>
     <string name="result"><font size="20">Años Humanos</font></string>
-    <string name="weight_result">Peso</string>
+
     <string name="small">Perro pequeño (menos de 9,9 kg)</string>
     <string name="no_age">Sin peso introducido</string>
     <string name="medium">Perro mediano (10 kg a 24,9 kg)</string>

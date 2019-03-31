@@ -30,6 +30,27 @@ public class CalculatorResult extends AppCompatActivity {
     int val_dog_year; // define variable for value of dog age in year/s (relates to (b_DogCalulator)
     int val_dog_month; // define variable for value of dog age in month/s (relates to (b_DogCalulator)
 
+//    <string name="header_main">Age Converter</string> android:id="@+id/header_main"
+//    <string name="button_home">Home</string> android:id="@+id/button_home"
+//    <string name="text_weight_range">Select Dog Weight</string> ndroid:id="@+id/header_select_dog_weight"
+//    <string name="text_year_range">Select Dog Age - Year(s)</string> android:id="@+id/header_dog_age_years"
+//    <string name="text_month_range">Select Dog Age - Month(s)</string> android:id="@+id/header_dog_age_months"
+//    <string name="text_calculate_human_year">Calculate Human Years</string> android:id="@+id/text_calculate_human_year"
+//    <string name="result"><font size="20">Human Years</font></string> android:id="@+id/value_human_age"
+
+//    <string name="small">Small dog (under 9.9 kg)</string>
+//    <string name="no_age">No weight entered</string>
+//    <string name="medium">Medium dog (10 kg to 24.9 kg)</string>
+//    <string name="large">Large dog (25 kg to 39.9 kg)</string>
+//    <string name="txt_year">Year(s)</string>
+//    <string name="blank" />
+//    <string name="one_year">year</string>
+//    <string name="years">years</string>
+//    <string name="month">month</string>
+//    <string name="months">months</string>
+//    <string name="xlarge">X-Large dog (over 40 kg)</string>
+//    <string name="hint"><font size="20">Human Years</font></string>
+//
     @Override
 
     protected void attachBaseContext (Context newBase) {
@@ -173,7 +194,6 @@ public class CalculatorResult extends AppCompatActivity {
         TextView val_age = (TextView) findViewById(R.id.value_human_age);
         AgeCalculator ageCalc = new AgeCalculator();
         String result = ageCalc.age_cal(val_dog_size, val_dog_year, val_dog_month);
-//        String result = AgeCalculator.age_cal(val_dog_size, val_dog_year, val_dog_month);
 
         val_age.setText(String.valueOf(result));
     } // end public age_output class

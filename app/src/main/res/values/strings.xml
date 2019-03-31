@@ -11,9 +11,9 @@
     <string name="text_month_range">Select Dog Age - Month(s)</string>
     <string name="header_main">Age Converter</string>
     <string name="button_home">Home</string>
-    <string name="button_calculate">Calculate Human Years</string>
+    <string name="text_calculate_human_year">Calculate Human Years</string>
     <string name="result"><font size="20">Human Years</font></string>
-    <string name="weight_result">Weight</string>
+
     <string name="small">Small dog (under 9.9 kg)</string>
     <string name="no_age">No weight entered</string>
     <string name="medium">Medium dog (10 kg to 24.9 kg)</string>

@@ -1,6 +1,7 @@
 package au.edu.jcu.cp3406.assignmentageconverter;
 
 import android.support.v4.app.INotificationSideChannel;
+import android.widget.TextView;
 
 class AgeCalculator {
 
@@ -9,7 +10,8 @@ class AgeCalculator {
     String age_cal(int dog_size, int year, int month) {
 
         if (dog_size == 0) {
-            return "FU";
+
+            return 0 + " years";
 
         } else {
 

@@ -233,14 +233,14 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/begin"
+            android:id="@+id/text_calculate_human_year"
             android:layout_width="150dp"
             android:layout_height="60dp"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="0dp"
             android:background="@color/yellow"
             android:fontFamily="@font/berkshire_swash"
-            android:text="@string/button_calculate"
+            android:text="@string/text_calculate_human_year"
             android:textAlignment="center"
             android:textAllCaps="false"
             android:textColor="@color/black"
