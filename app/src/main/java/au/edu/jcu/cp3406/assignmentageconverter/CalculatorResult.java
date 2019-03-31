@@ -13,7 +13,6 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 
 import au.edu.jcu.cp3406.assignmentageconverter.Helper.LocaleHelper;
-import io.paperdb.Paper;
 
 
 public class CalculatorResult extends AppCompatActivity {
@@ -172,7 +171,9 @@ public class CalculatorResult extends AppCompatActivity {
     public void age_output() {
 
         TextView val_age = (TextView) findViewById(R.id.value_human_age);
-        String result = AgeCalculator.age_cal(val_dog_size, val_dog_year, val_dog_month);
+        AgeCalculator ageCalc = new AgeCalculator();
+        String result = ageCalc.age_cal(val_dog_size, val_dog_year, val_dog_month);
+//        String result = AgeCalculator.age_cal(val_dog_size, val_dog_year, val_dog_month);
 
         val_age.setText(String.valueOf(result));
     } // end public age_output class
