@@ -1,6 +1,7 @@
 package au.edu.jcu.cp3406.assignmentageconverter.Helper;
 
-//https://www.youtube.com/watch?v=ywF-ySiBAsc
+//Code location - https://www.youtube.com/watch?v=ywF-ySiBAsc
+
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -8,23 +9,22 @@ import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Build;
 import android.preference.PreferenceManager;
+
 import java.util.Locale;
-import io.paperdb.Paper;
+
+// Create translate coding
 
 public class LocaleHelper {
 
     public static final String SELECTED_LANGUAGE = "Locale.Helper.Selected.Language";
 
-//    public static Context onAttach(Context context) {
-//        String lang = getPersistedData (context, Locale.getDefault().getLanguage());
-//        return setLocale(context, lang);
-//    }
 
     public static Context onAttach(Context context, String defaultLanguage) {
-        String lang = getPersistedData (context, defaultLanguage);
+        String lang = getPersistedData(context, defaultLanguage);
         return setLocale(context, lang);
     }
-    public static Context setLocale (Context context, String lang){
+
+    public static Context setLocale(Context context, String lang) {
         persist(context, lang);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N)
             return updateResources(context, lang);
@@ -48,15 +48,14 @@ public class LocaleHelper {
 
 
     @SuppressWarnings("deprecation")
-    private static Context updatedResourcesLegacy (Context context, String lang) {
+    private static Context updatedResourcesLegacy(Context context, String lang) {
         Locale locale = new Locale(lang);
         Locale.setDefault(locale);
 
         Resources resources = context.getResources();
         Configuration config = resources.getConfiguration();
         config.locale = locale;
-        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1)
-            config.setLayoutDirection(locale);
+        config.setLayoutDirection(locale);
         resources.updateConfiguration(config, resources.getDisplayMetrics());
         return context;
 

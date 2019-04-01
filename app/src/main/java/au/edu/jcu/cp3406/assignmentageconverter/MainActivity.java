@@ -17,12 +17,15 @@ import io.paperdb.Paper;
 
 public class MainActivity extends AppCompatActivity {
 
+    // Select variables that need to be translated
     TextView tV_header;
     TextView tV_instructions;
     TextView tV_begin;
+
+    // Uses MainApplication code to set language as English
     @Override
-    protected void attachBaseContext (Context newBase) {
-        super.attachBaseContext(LocaleHelper.onAttach(newBase,"en"));
+    public void attachBaseContext(Context newBase) {
+        super.attachBaseContext(LocaleHelper.onAttach(newBase, "en"));
     }
 
 
@@ -32,23 +35,26 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Finds strings to translate
         configurebutton_calculate();
-        tV_header = (TextView) findViewById(R.id.header_main);
-        tV_instructions = (TextView) findViewById(R.id.instructions);
-        tV_begin = (TextView) findViewById(R.id.begin);
+        tV_header = findViewById(R.id.header_main);
+        tV_instructions = findViewById(R.id.instructions);
+        tV_begin = findViewById(R.id.begin);
 
         // Init Paper first:
         Paper.init(this);
 
 
-        //Default Language is English
+        //Default language is English, empty if required
         String language = Paper.book().read("language");
-        if(language == null);
-            Paper.book().write("language", "en");
+        if (null == language) {
+        }
+        Paper.book().write("language", "en");
 
-            updateView((String)Paper.book().read("language"));
+        updateView((String) Paper.book().read("language"));
     }
 
+    // LocalHelper used to translate language
     private void updateView(String lang) {
 
         Context context = LocaleHelper.setLocale(this, lang);
@@ -59,27 +65,29 @@ public class MainActivity extends AppCompatActivity {
         tV_begin.setText(resources.getString(R.string.begin));
     }
 
+    // Create setting in action bar with two options
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.settings, menu);
         return true;
     }
 
+    // Activate settings in action bar to change language ie English/Spanish
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.settings_english) {
-            Paper.book().write("language","en");
-            updateView((String)Paper.book().read("language"));
+            Paper.book().write("language", "en");
+            updateView((String) Paper.book().read("language"));
 
-    }
-    else if (item.getItemId() == R.id.settings_spanish) {
-            Paper.book().write("language","es");
-            updateView((String)Paper.book().read("language"));
+        } else if (item.getItemId() == R.id.settings_spanish) {
+            Paper.book().write("language", "es");
+            updateView((String) Paper.book().read("language"));
 
         }
         return true;
     }
 
+    // On click button - Begin - sends to calculation activity
     private void configurebutton_calculate() {
         Button btn_calculate = findViewById(R.id.begin);
         btn_calculate.setOnClickListener(new View.OnClickListener() {

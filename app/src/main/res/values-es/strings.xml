@@ -14,9 +14,9 @@
     <string name="hint"><font size="20">Años Humanos</font></string>
     <string name="header_main">Convertidor de Edad</string>
     <string name="button_home">Casa</string>
-    <string name="text_weight_range">Seleccione el peso del perro</string>
-    <string name="text_year_range">Seleccione la edad del perro\nAño(s)</string>
-    <string name="text_month_range">Seleccione la edad del perro\nMes(es)</string>
+    <string name="text_weight_range">Seleccione el Peso del Perro</string>
+    <string name="text_year_range">Seleccione la Edad del Perro\nAño(s)</string>
+    <string name="text_month_range">Seleccione la Edad del Perro\nMes(es)</string>
     <string name="text_calculate_human_year">Calcular\nAños humanos</string>
     <string name="result"><font size="20">Años Humanos</font></string>
 
