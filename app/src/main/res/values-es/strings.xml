@@ -4,18 +4,19 @@
     <!--Home Layout-->
 
     <string name="instructions">La Calculadora de la Edad del Perro a la Edad Humana Calculará
-                                la edad humana de tu perro en función de su peso y edad.\nPresione
-                                comenzar para continuar.\nSeleccionar tamaño de cachorro basado en
-                                kgs.n\ Seleccionar la edad en año(s) y mes(s).</string>
-    <string name="begin">Empezar</string>
+                                la edad humana de tu perro en función de su peso y edad.\n\nPresione
+                                INICIAR  para continuar.\nSeleccionar tamaño basado en kgs.\n
+                                Seleccionar la edad en año(s).\nSeleccionar la edad enmes(s).</string>
+
+    <string name="begin">Iniciar</string>
 
     <!--Calculator Layout-->
     <string name="hint"><font size="20">Años Humanos</font></string>
     <string name="header_main">Convertidor de Edad</string>
     <string name="button_home">Casa</string>
     <string name="text_weight_range">Seleccione el peso del perro</string>
-    <string name="text_year_range">Seleccione la edad del perro - Año(s)</string>
-    <string name="text_month_range">Seleccione la edad del perro - Mes(es)</string>
+    <string name="text_year_range">Seleccione la edad del perro\nAño(s)</string>
+    <string name="text_month_range">Seleccione la edad del perro\nMes(es)</string>
     <string name="text_calculate_human_year">Calcular\nAños humanos</string>
     <string name="result"><font size="20">Años Humanos</font></string>
 

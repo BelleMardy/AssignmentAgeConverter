@@ -88,19 +88,19 @@ public class CalculatorResult extends AppCompatActivity {
                 int dog_size_xlarge = 4;
 
                 if (dog_size == dog_size_null) {
-                    TextView size_desc = (TextView) findViewById(R.id.text_size_description);
+                    TextView size_desc = (TextView) findViewById(R.id.text_weight_description);
                     size_desc.setText(getString(R.string.no_age));
                 } else if (dog_size == dog_size_small) {
-                    TextView size_desc = (TextView) findViewById(R.id.text_size_description);
+                    TextView size_desc = (TextView) findViewById(R.id.text_weight_description);
                     size_desc.setText(getString(R.string.small));
                 } else if (dog_size == dog_size_medium) {
-                    TextView size_desc = (TextView) findViewById(R.id.text_size_description);
+                    TextView size_desc = (TextView) findViewById(R.id.text_weight_description);
                     size_desc.setText(getString(R.string.medium));
                 } else if (dog_size == dog_size_large) {
-                    TextView size_desc = (TextView) findViewById(R.id.text_size_description);
+                    TextView size_desc = (TextView) findViewById(R.id.text_weight_description);
                     size_desc.setText(getString(R.string.large));
                 } else if (dog_size == dog_size_xlarge) {
-                    TextView size_desc = (TextView) findViewById(R.id.text_size_description);
+                    TextView size_desc = (TextView) findViewById(R.id.text_weight_description);
                     size_desc.setText(getString(R.string.xlarge));
                 }
                 val_dog_size = dog_size;// defined variable for weight value

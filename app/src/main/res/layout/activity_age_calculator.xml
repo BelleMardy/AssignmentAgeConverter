@@ -1,115 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+
+<!-- Full screen-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/change_colour"
-    android:layout_width="410dp"
-    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:background="@drawable/img_paint_covered_puppy"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <!-- Start Age Converter Header-->
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
 
         <TextView
             android:id="@+id/header_main"
-            android:layout_width="422dp"
-            android:layout_height="76dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:background="@color/black"
             android:fontFamily="@font/berkshire_swash"
             android:text="@string/header_main"
             android:textAlignment="center"
-            android:background="@color/black"
             android:textColor="@color/white"
-            app:autoSizeTextType="uniform"  />
-    </LinearLayout>
+            app:autoSizeTextType="uniform" />
+    </RelativeLayout>
+    <!-- Bottom Age Converter Header -->
 
-    <LinearLayout
+    <!-- Start Select Dog Weight Header-->
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="65dp"
+
+
+        android:layout_marginTop="70dp">
 
         <TextView
             android:id="@+id/header_select_dog_weight"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="85dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+
             android:background="@color/black"
             android:fontFamily="@font/berkshire_swash"
             android:text="@string/text_weight_range"
             android:textAlignment="center"
             android:textAllCaps="false"
             android:textColor="@color/white"
-            app:autoSizeTextType="uniform"  />
-    </LinearLayout>
+            app:autoSizeTextType="uniform" />
+    </RelativeLayout>
+    <!-- End Select Dog Weight Header-->
 
-    <LinearLayout
+    <!-- Start Dog Weight Results and Description-->
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
 
+
+        android:layout_marginTop="136dp">
 
         <TextView
             android:id="@+id/value_seekbar_weight"
             android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
             android:background="@color/white"
             android:fontFamily="@font/berkshire_swash"
-
             android:textAlignment="center"
-            android:textColor="@color/black"
+            android:textColor="@color/blue"
             app:autoSizeTextType="uniform" />
 
         <TextView
-            android:id="@+id/text_size_description"
-            android:layout_width="310dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="10dp"
+            android:id="@+id/text_weight_description"
+            android:layout_width="314dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="87dp"
             android:background="@color/white"
             android:fontFamily="@font/berkshire_swash"
             android:textAlignment="center"
             android:textColor="@color/black"
             app:autoSizeTextType="uniform" />
+    </RelativeLayout>
+    <!-- End Dog Weight Results and Description-->
 
-
-    </LinearLayout>
-
-    <LinearLayout
+    <!-- Start Dog Weight Seekbar-->
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="57dp"
+
+        android:layout_marginTop="187dp">
 
         <SeekBar
             android:id="@+id/seekbar_weight"
             style="@style/Widget.AppCompat.SeekBar.Discrete"
-            android:layout_width="100dp"
+            android:layout_width="384dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="10dp"
-            android:layout_weight="1"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
             android:background="@drawable/custom_seekbar"
+            android:max="4"
+            app:autoSizeTextType="uniform" />
+    </RelativeLayout>
+    <!-- End Dog Weight Seekbar-->
 
-
-            android:max="4" />
-
-    </LinearLayout>
-
-
-    <LinearLayout
+    <!-- Start Dog Age Year-->
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="57dp"
+
+
+        android:layout_marginTop="246dp">
 
         <TextView
             android:id="@+id/header_dog_age_years"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="161dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="4dp"
             android:background="@color/black"
             android:fontFamily="@font/berkshire_swash"
             android:text="@string/text_year_range"
@@ -120,59 +135,64 @@
 
         <TextView
             android:id="@+id/value_seekbar_year"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="185dp"
+            android:layout_marginBottom="4dp"
             android:background="@color/white"
             android:fontFamily="@font/berkshire_swash"
             android:textAlignment="center"
-            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:textColor="@color/blue"
             app:autoSizeTextType="uniform" />
 
         <TextView
             android:id="@+id/text_description_year"
-            android:layout_width="68dp"
-            android:layout_height="wrap_content"
-
-            android:layout_marginTop="20dp"
+            android:layout_width="141dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="250dp"
             android:background="@color/white"
             android:fontFamily="@font/berkshire_swash"
-
             android:textAlignment="center"
             android:textColor="@color/blue"
             app:autoSizeTextType="uniform" />
-    </LinearLayout>
+    </RelativeLayout>
+    <!-- End Dog Age Year-->
 
-    <LinearLayout
+    <!-- Start Dog Age Year Seekbar-->
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="57dp"
 
+        android:layout_marginTop="302dp">
 
         <SeekBar
             android:id="@+id/seekbar_year"
-            style="@style/Widget.AppCompat.SeekBar.Discrete"
-            android:layout_width="100dp"
+            android:layout_width="384dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="10dp"
-            android:layout_weight="1"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
             android:background="@drawable/custom_seekbar"
-            android:max="18" />
+            android:max="18"
+            app:autoSizeTextType="uniform" />
+    </RelativeLayout>
+    <!-- End Dog Age Year Seekbar-->
 
-    </LinearLayout>
-
-    <LinearLayout
+    <!-- End Dog Age Month-->
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="57dp"
+
+        android:layout_marginTop="359dp">
 
         <TextView
             android:id="@+id/header_dog_age_months"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="161dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
             android:background="@color/black"
             android:fontFamily="@font/berkshire_swash"
             android:text="@string/text_month_range"
@@ -181,107 +201,112 @@
             android:textColor="@color/white"
             app:autoSizeTextType="uniform" />
 
-
         <TextView
             android:id="@+id/value_seekbar_month"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="185dp"
+            android:layout_marginTop="3dp"
             android:background="@color/white"
             android:fontFamily="@font/berkshire_swash"
             android:textAlignment="center"
-            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:textColor="@color/blue"
             app:autoSizeTextType="uniform" />
 
         <TextView
             android:id="@+id/text_description_month"
-            android:layout_width="68dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_width="141dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="250dp"
             android:background="@color/white"
             android:fontFamily="@font/berkshire_swash"
             android:textAlignment="center"
             android:textColor="@color/blue"
             app:autoSizeTextType="uniform" />
+    </RelativeLayout>
+    <!-- End Dog Age Month-->
 
-
-    </LinearLayout>
-
-    <LinearLayout
+    <!-- Start Dog Age Month Seekbar-->
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="57dp"
 
+        android:layout_marginTop="417dp">
 
         <SeekBar
             android:id="@+id/seekbar_month"
-            style="@style/Widget.AppCompat.SeekBar.Discrete"
-            android:layout_width="100dp"
+            android:layout_width="384dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="10dp"
-            android:layout_weight="1"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
             android:background="@drawable/custom_seekbar"
-            android:max="11" />
+            android:max="11"
+            app:autoSizeTextType="uniform" />
+    </RelativeLayout>
+    <!-- End Dog Age Month Seekbar-->
 
-
-    </LinearLayout>
-
-    <LinearLayout
+    <!-- Start Dog Age Calculate Text box and value-->
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="70dp"
+        android:layout_marginTop="470dp">
 
         <TextView
             android:id="@+id/text_calculate_human_year"
-            android:layout_width="150dp"
+            android:layout_width="185dp"
             android:layout_height="60dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="0dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
             android:background="@color/yellow"
             android:fontFamily="@font/berkshire_swash"
             android:text="@string/text_calculate_human_year"
             android:textAlignment="center"
-            android:textAllCaps="false"
             android:textColor="@color/black"
             app:autoSizeTextType="uniform" />
 
         <TextView
             android:id="@+id/value_human_age"
-            android:layout_width="150dp"
+            android:layout_width="175dp"
             android:layout_height="60dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="216dp"
             android:background="@color/white"
             android:fontFamily="@font/berkshire_swash"
             android:hint="@string/result"
             android:textAlignment="center"
             android:textColor="@color/black"
             app:autoSizeTextType="uniform" />
+    </RelativeLayout>
+    <!-- End Dog Age Calculate Text box and value-->
 
-    </LinearLayout>
-
-    <LinearLayout
+    <!-- Start Home button-->
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
 
+
+
+        android:layout_marginTop="570dp">
 
         <Button
             android:id="@+id/button_home"
             android:layout_width="150dp"
-            android:layout_height="30dp"
-            android:layout_gravity=""
-            android:layout_marginLeft="130dp"
-            android:layout_marginTop="25dp"
+            android:layout_height="100dp"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+
             android:background="@color/black"
             android:fontFamily="@font/berkshire_swash"
             android:text="@string/button_home"
             android:textAlignment="center"
             android:textAllCaps="false"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            app:autoSizeTextType="uniform" />
 
-    </LinearLayout>
-
-</android.support.v7.widget.LinearLayoutCompat>
-
+    </RelativeLayout>
+    <!-- End Home button-->
+</RelativeLayout>

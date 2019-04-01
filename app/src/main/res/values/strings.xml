@@ -3,15 +3,15 @@
     <string name="app_name">Dog Age To Human Age Converter</string>
     <string name="instructions">The Dog Age to Human Age Calculator will calculate the
                                 human age of your dog based on their weight and age.
-                                Press begin to continue.\nSelect puppy size based on kgs.\n
-                                Select age in year(s) and month(s).</string>
+                                \n\n Press BEGIN  to continue.\nSelect size based on kgs.\n
+                                Select age in year(s).\nSelect age in month(s).</string>
     <string name="begin">Begin</string>
     <string name="text_weight_range">Select Dog Weight</string>
-    <string name="text_year_range">Select Dog Age - Year(s)</string>
-    <string name="text_month_range">Select Dog Age - Month(s)</string>
+    <string name="text_year_range">Select Dog Age\nYear(s)</string>
+    <string name="text_month_range">Select Dog Age\nMonth(s)</string>
     <string name="header_main">Age Converter</string>
     <string name="button_home">Home</string>
-    <string name="text_calculate_human_year">Calculate Human Years</string>
+    <string name="text_calculate_human_year">Calculate\nHuman Years</string>
     <string name="result"><font size="20">Human Years</font></string>
 
     <string name="small">Small dog (under 9.9 kg)</string>
