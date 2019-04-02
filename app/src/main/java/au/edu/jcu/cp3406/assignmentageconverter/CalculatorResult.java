@@ -3,17 +3,20 @@ package au.edu.jcu.cp3406.assignmentageconverter;
 // Dog age conversion cheat sheet //https://www.centralvet.ca/senior-dog-wellness
 
 import android.content.Context;
-import android.os.Bundle;
+import android.content.Intent;
+import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
 import au.edu.jcu.cp3406.assignmentageconverter.Helper.LocaleHelper;
-
+import io.paperdb.Paper;
 
 public class CalculatorResult extends AppCompatActivity {
 
@@ -31,6 +34,8 @@ public class CalculatorResult extends AppCompatActivity {
     int val_dog_month;
 
 
+    // Select variables that need to be translated
+
     //TextView tV_header_cal;
     //TextView tV_select_dog_weight;
     //TextView tV_text_weight_description;
@@ -42,16 +47,6 @@ public class CalculatorResult extends AppCompatActivity {
     //TextView tV_value_human_age;
     //TextView tV_button_home;
 
-    //tV_header_cal = findViewById(R.id.header_main);
-    //tV_select_dog_weight = findViewById(R.id.header_select_dog_weight);
-    //tV_txt_weight_description = findViewById(R.id.text_weight_description);
-    //tV_header_dog_age_years = findViewById(R.id.header_dog_age_years);
-    //tV_text_description_year = findViewById(R.id.text_description_year);
-    //tV_header_dog_age_months = findViewById(R.id.header_dog_age_months);
-    //tV_text_description_month = findViewById(R.id.text_description_month);
-    //tV_text_calculate_human_year = findViewById(R.id.text_calculate_human_year);
-    //tV_value_human_age = findValueById(R.id.value_human_age);
-    //tV_button_home = findValueById(R.id.button_home);
 
     //tv_header_cal.setText(resources.getString(R.string.header_main));
     //tv_select_dog_weight(resources.getString(R.string.header_select_dog_weight);
@@ -64,7 +59,7 @@ public class CalculatorResult extends AppCompatActivity {
     //tv_value_human_age(resources.getString(R.string.value_human_age);
     //tv_button_home(resources.getString(R.sting.button_home);
 
-
+    // Uses MainApplication code to set language as English
     @Override
 
     protected void attachBaseContext(Context newBase) {
@@ -82,7 +77,79 @@ public class CalculatorResult extends AppCompatActivity {
 
         configurebutton_home();
 
-        // sets functionality of seek bars
+
+        // Finds strings to translate
+
+        //tV_header_cal = findViewById(R.id.header_main);
+        //tV_select_dog_weight = findViewById(R.id.header_select_dog_weight);
+        //tV_txt_weight_description = findViewById(R.id.text_weight_description);
+        //tV_header_dog_age_years = findViewById(R.id.header_dog_age_years);
+        //tV_text_description_year = findViewById(R.id.text_description_year);
+        //tV_header_dog_age_months = findViewById(R.id.header_dog_age_months);
+        //tV_text_description_month = findViewById(R.id.text_description_month);
+        //tV_text_calculate_human_year = findViewById(R.id.text_calculate_human_year);
+        //tV_value_human_age = findValueById(R.id.value_human_age);
+        //tV_button_home = findValueById(R.id.button_home);
+
+
+        // Init Paper first:
+        Paper.init(this);
+
+
+//        //Default language is English, empty 'if' statement required
+//        String language = Paper.book().read("language");
+//        if (null == language) {
+////        }
+////        Paper.book().write("language", "en");
+////
+////        updateView((String) Paper.book().read("language"));
+////    }
+//
+//        // LocalHelper used to translate language
+//        private void updateView(String lang) {
+//
+//            Context context = LocaleHelper.setLocale(this, lang);
+//            Resources resources = context.getResources();
+//
+        //tv_header_cal.setText(resources.getString(R.string.header_main));
+        //tv_select_dog_weight(resources.getString(R.string.header_select_dog_weight);
+        //tv_text_weight_description(resources.getString(R.string.text_weight_description);
+        //tv_header_dog_age_years(resources.getString(R.string.header_dog_age_years);
+        //tv_header_dog_age_years(resources.getString(R.string.text_description_year);
+        //tV_header_dog_age_months(resources.getString(R.string.header_dog_age_months);
+        //tV_text_description_month(resources.getString(R.string.text_description_month);
+        //tV_text_calculate_human_year(resources.getString(R.string.text_calculate_human_year);
+        //tv_value_human_age(resources.getString(R.string.value_human_age);
+        //tv_button_home(resources.getString(R.sting.button_home);
+//
+//        }
+//
+//        // Create setting in action bar with two options
+//        @Override
+//        public boolean onCreateOptionsMenu(Menu menu) {
+//            getMenuInflater().inflate(R.menu.settings, menu);
+//            return true;
+//        }
+//
+//        // Activate settings in action bar to change language ie English/Spanish
+//        @Override
+//        public boolean onOptionsItemSelected(MenuItem item) {
+//            if (item.getItemId() == R.id.settings_english) {
+//                Paper.book().write("language", "en");
+//                updateView((String) Paper.book().read("language"));
+//
+//            } else if (item.getItemId() == R.id.settings_spanish) {
+//                Paper.book().write("language", "es");
+//                updateView((String) Paper.book().read("language"));
+//
+//            }
+//            return true;
+//        }
+
+
+    // sets functionality of seek bars
+
+
 
         sb_weight = this.findViewById(R.id.seekbar_weight);
         val_weight = this.findViewById(R.id.value_seekbar_weight);
@@ -109,7 +176,7 @@ public class CalculatorResult extends AppCompatActivity {
 
                 if (dog_size == dog_size_null) {
                     TextView size_desc = findViewById(R.id.text_weight_description);
-                    size_desc.setText(getString(R.string.no_age));
+                    size_desc.setText(getString(R.string.blank));
                 } else if (dog_size == dog_size_small) {
                     TextView size_desc = findViewById(R.id.text_weight_description);
                     size_desc.setText(getString(R.string.small));
@@ -140,7 +207,7 @@ public class CalculatorResult extends AppCompatActivity {
 
         sb_year.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
-            public void onProgressChanged(SeekBar seekBar, int year, boolean fromUser) {
+            public void onProgressChanged(SeekBar sb_year, int year, boolean fromUser) {
                 val_year.setText(String.valueOf(year));
 
 
@@ -223,6 +290,7 @@ public class CalculatorResult extends AppCompatActivity {
 
         val_age.setText(String.valueOf(result));
     }
+
     // Create setting in action bar with two options
     @Override
     public boolean onCreateOptionsMenu(Menu settings_menu) {
@@ -235,13 +303,11 @@ public class CalculatorResult extends AppCompatActivity {
     private void configurebutton_home() {
         Button btn_home = findViewById(R.id.button_home);
         btn_home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }  // end public void onClick
+        @Override
+        public void onClick (View view){
+            startActivity(new Intent(CalculatorResult.this, MainActivity.class));
+        }
+
         });
-    }
-
-
-}
+    }}
 

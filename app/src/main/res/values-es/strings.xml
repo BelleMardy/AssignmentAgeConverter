@@ -2,7 +2,7 @@
 <resources>
 
     <!--Home Activity-->
-    <string name="app_name">Edad del Perro al Convertidor de la Edad Humana</string>
+    <!--<string name="app_name">Edad del Perro al Convertidor de la Edad Humana</string>-->
     <string name="begin">Iniciar</string>
     <string name="instructions">La Calculadora de la Edad del Perro a la Edad Humana Calculará
                                 la edad humana de tu perro en función de su peso y edad.\n\nPresione

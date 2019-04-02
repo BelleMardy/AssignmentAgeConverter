@@ -74,17 +74,19 @@
             android:fontFamily="@font/berkshire_swash"
             android:textAlignment="center"
             android:textColor="@color/blue"
+            android:gravity="center"
             app:autoSizeTextType="uniform" />
 
         <TextView
             android:id="@+id/text_weight_description"
             android:layout_width="314dp"
             android:layout_height="50dp"
+            android:gravity="center"
             android:layout_marginLeft="87dp"
             android:background="@color/white"
             android:fontFamily="@font/berkshire_swash"
             android:textAlignment="center"
-            android:textColor="@color/black"
+            android:textColor="@color/blue"
             app:autoSizeTextType="uniform" />
     </RelativeLayout>
     <!-- End Dog Weight Results and Description-->
@@ -169,6 +171,7 @@
 
         <SeekBar
             android:id="@+id/seekbar_year"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
             android:layout_width="384dp"
             android:layout_height="40dp"
             android:layout_centerHorizontal="true"
@@ -237,6 +240,7 @@
 
         <SeekBar
             android:id="@+id/seekbar_month"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
             android:layout_width="384dp"
             android:layout_height="40dp"
             android:layout_centerHorizontal="true"
@@ -276,7 +280,7 @@
             android:fontFamily="@font/berkshire_swash"
             android:hint="@string/result"
             android:textAlignment="center"
-            android:textColor="@color/black"
+            android:textColor="@color/blue"
             app:autoSizeTextType="uniform" />
     </RelativeLayout>
     <!-- End Dog Age Calculate Text box and value-->

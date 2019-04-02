@@ -23,7 +23,7 @@
 
     <string name="small">Small dog (under 9.9 kg)</string>
     <string name="no_age">No weight entered</string>
-    <string name="medium">Medium dog 10 kg to 24.9 kg)</string>
+    <string name="medium">Medium dog (10 kg to 24.9 kg)</string>
     <string name="large">Large dog (25 kg to 39.9 kg)</string>
     <string name="txt_year">Year(s)</string>
     <string name="blank" />

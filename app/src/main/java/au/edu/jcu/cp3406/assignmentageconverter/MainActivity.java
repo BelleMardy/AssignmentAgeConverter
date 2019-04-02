@@ -11,6 +11,7 @@ import android.content.Intent;
 import android.widget.Button;
 import android.widget.TextView;
 
+
 import au.edu.jcu.cp3406.assignmentageconverter.Helper.LocaleHelper;
 import io.paperdb.Paper;
 
@@ -35,8 +36,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Finds strings to translate
+        // refer to OnClick button to change activities
         configurebutton_begin();
+
+
+        // Finds strings to translate
 
         tV_begin = findViewById(R.id.begin);
         tV_header = findViewById(R.id.header_main);
@@ -47,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         Paper.init(this);
 
 
-        //Default language is English, empty if required
+        //Default language is English, empty 'if' statement required
         String language = Paper.book().read("language");
         if (null == language) {
         }
