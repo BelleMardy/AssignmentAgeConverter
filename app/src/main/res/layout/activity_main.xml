@@ -25,7 +25,7 @@
             android:layout_marginTop="0dp"
             android:background="@color/black"
             android:fontFamily="@font/berkshire_swash"
-            android:text="@string/button_home"
+            android:text="@string/header_main"
             android:textAlignment="center"
             android:textColor="@color/white"
             app:autoSizeTextType="uniform" />

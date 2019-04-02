@@ -2,7 +2,12 @@ package au.edu.jcu.cp3406.assignmentageconverter;
 
 // Age calculator program
 
+import android.widget.TextView;
+
 class AgeCalculator {
+
+
+
 
     // Refers to array
     private int[] human_ages;

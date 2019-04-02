@@ -11,12 +11,12 @@
 
     <!--Calculator Layout-->
     <string name="header_main">Age Converter</string>
-    <string name="button_home">Home</string>
-    <string name="text_weight_range">Select Dog Weight</string>
-    <string name="text_year_range">Select Dog Age\nYear(s)</string>
-    <string name="text_month_range">Select Dog Age\nMonth(s)</string>
-    <string name="text_calculate_human_year">Calculate\nHuman Years</string>
-    <string name="result"><font size="20">Human Years</font></string>
+    <string name="home">Home</string>
+    <string name="select_dog_weight">Select Dog Weight</string>
+    <string name="dog_age_years">Select Dog Age\nYear(s)</string>
+    <string name="dog_age_months">Select Dog Age\nMonth(s)</string>
+    <string name="calculate_human_age">Calculate\nHuman Age</string>
+    <string name="value_human_age"><font size="20">Human Age</font></string>
     <string name="small">Small dog (under 9.9 kg)</string>
     <string name="no_age">No weight entered</string>
     <string name="medium">Medium dog (10 kg to 24.9 kg)</string>
@@ -43,7 +43,7 @@
 
     <!--<string name="begin">Calculate</string>-->
 
-    <!--&lt;!&ndash;Calculator Layout&ndash;&gt;--><!--<string name="header_age_converter">Age Converter</string>--><!--<string name="button_home">Home</string>--><!--<string name="text_weight_range">Select Dog Weight</string>--><!--<string name="text_year_range">Select Dog Age - Year(s)</string>--><!--<string name="text_month_range">Select Dog Age - Month(s)</string>--><!--<string name="button_calculate">Calculate\nHuman Years</string>--><!--<string name="result"><font size="20">Human Age</font></string>--><!--<string name="weight_result">Weight</string>--><!--<string name="small">Small dog (under 9.9 kg)</string>--><!--<string name="no_age">No weight entered</string>--><!--<string name="medium">Medium dog (10 kg to 24.9 kg)</string>--><!--<string name="large">Large dog (25 kg to 39.9 kg)</string>--><!--<string name="txt_year">Year(s)</string>--><!--<string name="blank" />--><!--<string name="one_year">year</string>--><!--<string name="years">years</string>--><!--<string name="month">month</string>--><!--<string name="months">months</string>--><!--<string name="xlarge">X-Large dog (over 40 kg)</string>-->
+    <!--&lt;!&ndash;Calculator Layout&ndash;&gt;--><!--<string name="header_age_converter">Age Converter</string>--><!--<string name="home">Home</string>--><!--<string name="text_weight_range">Select Dog Weight</string>--><!--<string name="text_year_range">Select Dog Age - Year(s)</string>--><!--<string name="text_month_range">Select Dog Age - Month(s)</string>--><!--<string name="button_calculate">Calculate\nHuman Years</string>--><!--<string name="result"><font size="20">Human Age</font></string>--><!--<string name="weight_result">Weight</string>--><!--<string name="small">Small dog (under 9.9 kg)</string>--><!--<string name="no_age">No weight entered</string>--><!--<string name="medium">Medium dog (10 kg to 24.9 kg)</string>--><!--<string name="large">Large dog (25 kg to 39.9 kg)</string>--><!--<string name="txt_year">Year(s)</string>--><!--<string name="blank" />--><!--<string name="one_year">year</string>--><!--<string name="years">years</string>--><!--<string name="month">month</string>--><!--<string name="months">months</string>--><!--<string name="xlarge">X-Large dog (over 40 kg)</string>-->
 
     <!--&lt;!&ndash;Menu Layout&ndash;&gt;--><!--<string name="language_english">English</string>--><!--<string name="language_spanish">Spanish</string>-->
 

@@ -5,6 +5,7 @@ import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.content.Intent;
@@ -19,9 +20,11 @@ import io.paperdb.Paper;
 public class MainActivity extends AppCompatActivity {
 
     // Select variables that need to be translated
+    TextView tV_begin;
     TextView tV_header;
     TextView tV_instructions;
-    TextView tV_begin;
+
+
 
     // Uses MainApplication code to set language as English
     @Override
@@ -57,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
         }
         Paper.book().write("language", "en");
 
-        updateView((String) Paper.book().read("language"));
+
     }
 
     // LocalHelper used to translate language
@@ -74,19 +77,21 @@ public class MainActivity extends AppCompatActivity {
 
     // Create setting in action bar with two options
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.settings, menu);
-        return true;
-    }
+    public boolean onCreateOptionsMenu(Menu settings_menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.settings, settings_menu);
+        return true;    }
+
+
 
     // Activate settings in action bar to change language ie English/Spanish
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.settings_english) {
+    public boolean onOptionsItemSelected(MenuItem settings) {
+        if (settings.getItemId() == R.id.settings_english) {
             Paper.book().write("language", "en");
             updateView((String) Paper.book().read("language"));
 
-        } else if (item.getItemId() == R.id.settings_spanish) {
+        } else if (settings.getItemId() == R.id.settings_spanish) {
             Paper.book().write("language", "es");
             updateView((String) Paper.book().read("language"));
 
@@ -99,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
         Button btn_calculate = findViewById(R.id.begin);
         btn_calculate.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View begin) {
                 startActivity(new Intent(MainActivity.this, CalculatorResult.class));
             }
         });

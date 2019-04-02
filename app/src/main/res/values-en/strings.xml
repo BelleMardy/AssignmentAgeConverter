@@ -14,13 +14,12 @@
 
     <!--activity_age_calculator strings-->
     <string name="header_main">Age Converter</string>
-    <string name="button_home">Home</string>
-    <string name="text_weight_range">Select Dog Weight</string>
-    <string name="text_year_range">Select Dog Age\nYear(s)</string>
-    <string name="text_month_range">Select Dog Age\nMonth(s)</string>
-    <string name="text_calculate_human_year">Calculated\nHuman Years</string>
-    <string name="result"><font size="20">Human Years</font></string>
-
+    <string name="home">Home</string>
+    <string name="select_dog_weight">Select Dog Weight</string>
+    <string name="dog_age_years">Select Dog Age\nYear(s)</string>
+    <string name="dog_age_months">Select Dog Age\nMonth(s)</string>
+    <string name="calculate_human_age">Calculated\nHuman Age</string>
+    <string name="value_human_age"><font size="20">Human Age</font></string>
     <string name="small">Small dog (under 9.9 kg)</string>
     <string name="no_age">No weight entered</string>
     <string name="medium">Medium dog (10 kg to 24.9 kg)</string>
