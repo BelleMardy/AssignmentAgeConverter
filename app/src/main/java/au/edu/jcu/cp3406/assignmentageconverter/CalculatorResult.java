@@ -222,7 +222,6 @@ public class CalculatorResult extends AppCompatActivity {
 
         Context context = LocaleHelper.setLocale(this, lang);
         Resources resources = context.getResources();
-        updateView((String) Paper.book().read("language"));
         tV_header_main.setText(resources.getString(R.string.header_main));
         tV_select_dog_weight.setText(resources.getString(R.string.select_dog_weight));
         tV_dog_age_years.setText(resources.getString(R.string.dog_age_years));
