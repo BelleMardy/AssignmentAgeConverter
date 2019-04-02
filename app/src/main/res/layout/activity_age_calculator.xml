@@ -46,7 +46,6 @@
             android:layout_height="50dp"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-
             android:background="@color/black"
             android:fontFamily="@font/berkshire_swash"
             android:text="@string/text_weight_range"

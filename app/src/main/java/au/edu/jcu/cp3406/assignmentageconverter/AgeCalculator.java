@@ -1,10 +1,10 @@
 package au.edu.jcu.cp3406.assignmentageconverter;
 
-import android.support.v4.app.INotificationSideChannel;
-import android.widget.TextView;
+// Age calculator program
 
 class AgeCalculator {
 
+    // Refers to array
     private int[] human_ages;
 
     String age_cal(int dog_size, int year, int month) {
@@ -25,11 +25,25 @@ class AgeCalculator {
         }
     }
 
+    /**
+     *
+     * @param year - The year age of the dog
+     * @param month - The month age of the dog
+     * @return
+     * Calculation
+     * Year is position in array
+     * For months establish the difference between human age and next human age
+     * Divide difference by 12 (difference equates to one year (12 months) in human years)
+     * Multiply result by dog months
+     * Add human age year and partial human age
+     * Convert decimal to months
+     *
+     */
     private String CalculatingHumanAge(int year, int month) {
         float human_age_diff = human_ages[year + 1] - human_ages[year];
         float month_as_decimal = human_age_diff / 12;
-        float dog_age_month = month_as_decimal * month;
-        float year_add_month = human_ages[year] + dog_age_month;
+        float human_age_month = month_as_decimal * month;
+        float year_add_month = human_ages[year] + human_age_month;
 
         int human_year = (int) year_add_month;
 
@@ -41,26 +55,27 @@ class AgeCalculator {
 
     }
 
+    // Results including output if singular or multiple year(s) month(s)
     private String checking_years_months(int human_year, float human_month) {
 
-        if (Math.round(human_month) == 0)  {
+        if (Math.round(human_month) == 0) {
             return Integer.toString(human_year) + " years";
 
         } else if (human_year == 0) {
             return Integer.toString(Math.round(human_month)) + " months";
 
         } else if (human_year == 1) {
-            return Integer.toString(human_year) + " year, " + Integer.toString(Math.round(human_month)) + " months";
+            return Integer.toString(human_year) + " year\n 1" + Integer.toString(Math.round(human_month)) + " months";
 
         } else if (Math.round(human_month) == 1) {
-            return Integer.toString(human_year) + " years, " + Integer.toString(Math.round(human_month)) + " month";
+            return Integer.toString(human_year) + " years\n" + Integer.toString(Math.round(human_month)) + " month";
 
         } else {
-            return Integer.toString(human_year) + " years, " + Integer.toString(Math.round(human_month)) + " months";
+            return Integer.toString(human_year) + " years\n" + Integer.toString(Math.round(human_month)) + " months";
 
         }
     }
-
+    // Array position = dog age
     private void set_dog_ages(int dog_size) {
         if (dog_size == 1) {
             this.human_ages = new int[]{0, 7, 13, 20, 26, 35, 40, 44, 48, 52, 56, 60, 64, 68, 72, 76, 80, 84, 88};

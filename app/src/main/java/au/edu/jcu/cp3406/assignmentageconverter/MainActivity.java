@@ -36,10 +36,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Finds strings to translate
-        configurebutton_calculate();
+        configurebutton_begin();
+
+        tV_begin = findViewById(R.id.begin);
         tV_header = findViewById(R.id.header_main);
         tV_instructions = findViewById(R.id.instructions);
-        tV_begin = findViewById(R.id.begin);
+
 
         // Init Paper first:
         Paper.init(this);
@@ -60,9 +62,10 @@ public class MainActivity extends AppCompatActivity {
         Context context = LocaleHelper.setLocale(this, lang);
         Resources resources = context.getResources();
 
+        tV_begin.setText(resources.getString(R.string.begin));
         tV_header.setText(resources.getString(R.string.header_main));
         tV_instructions.setText(resources.getString(R.string.instructions));
-        tV_begin.setText(resources.getString(R.string.begin));
+
     }
 
     // Create setting in action bar with two options
@@ -88,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // On click button - Begin - sends to calculation activity
-    private void configurebutton_calculate() {
+    private void configurebutton_begin() {
         Button btn_calculate = findViewById(R.id.begin);
         btn_calculate.setOnClickListener(new View.OnClickListener() {
             @Override

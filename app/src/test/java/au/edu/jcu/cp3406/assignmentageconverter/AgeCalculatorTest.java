@@ -4,28 +4,24 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
+
+// Test string output of age calculator
 public class AgeCalculatorTest {
 
     @Test
-    public void age_cal() {
+
+    public void test_age_cal() {
 
         int dog_size = 1;
         int year = 2;
         int month = 5;
 
-        
-        float expected = 0;
-        int output = 15.918;
+        String output;
 
         AgeCalculator age_calculator = new AgeCalculator();
         output = age_calculator.age_cal(dog_size, year, month);
+        System.out.println(output);
 
-
-        assertEquals();
-
-
-
-        
-
-}
+        assertEquals("15 years\n11 months", output);
+    }
 }
