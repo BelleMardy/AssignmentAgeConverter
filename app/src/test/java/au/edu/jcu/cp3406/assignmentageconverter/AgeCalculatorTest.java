@@ -18,7 +18,7 @@ public class AgeCalculatorTest {
 
         String output;
 
-        AgeCalculator age_calculator = new AgeCalculator();
+        MainAgeCalculator age_calculator = new MainAgeCalculator();
         output = age_calculator.age_cal(dog_size, year, month);
         System.out.println(output);
 

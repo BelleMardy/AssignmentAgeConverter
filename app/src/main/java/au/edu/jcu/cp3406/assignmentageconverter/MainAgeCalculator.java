@@ -4,7 +4,7 @@ package au.edu.jcu.cp3406.assignmentageconverter;
 
 import android.widget.TextView;
 
-class AgeCalculator {
+class MainAgeCalculator {
 
 
 

@@ -36,6 +36,15 @@
     <!--Menu Layout-->
     <string name="language_english">English</string>
     <string name="language_spanish">Spanish</string>
+    <!--<string name="language_home">Casa</string>-->
+    <!--<string name="language_calculator">Calculadora</string>-->
+    <!--<string name="language_background">Fondo</string>-->
+    <string name="activity_main_settings">Cambiar de Idioma</string>
+    <string name="btn_english">English</string>
+    <string name="btn_spanish">Spanish</string>
+    <string name="settings_home">Casa</string>
+    <string name="setting_begin">Iniciar</string>
+    <string name="setting_calculator">Iniciar</string>
 
 
 </resources>

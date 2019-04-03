@@ -18,7 +18,7 @@
 //import au.edu.jcu.cp3406.assignmentageconverter.Helper.LocaleHelper;
 //import io.paperdb.Paper;
 //
-//public class CalculatorResult extends AppCompatActivity {
+//public class MainCalculatorResult extends AppCompatActivity {
 //
 //    SeekBar sb_weight;
 //    TextView val_weight;
@@ -225,7 +225,7 @@
 //    public void age_output() {
 //
 //        TextView val_age = findViewById(R.id.value_human_age);
-//        AgeCalculator ageCalc = new AgeCalculator();
+//        MainAgeCalculator ageCalc = new MainAgeCalculator();
 //        String result = ageCalc.age_cal(val_dog_size, val_dog_year, val_dog_month);
 //
 //        val_age.setText(String.valueOf(result));
@@ -245,7 +245,7 @@
 //        btn_home.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick (View view){
-//                startActivity(new Intent(CalculatorResult.this, MainActivity.class));
+//                startActivity(new Intent(MainCalculatorResult.this, MainActivity.class));
 //            }
 //
 //        });

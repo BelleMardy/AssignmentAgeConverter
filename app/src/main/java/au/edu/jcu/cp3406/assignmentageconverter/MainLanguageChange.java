@@ -17,7 +17,9 @@ import au.edu.jcu.cp3406.assignmentageconverter.Helper.LocaleHelper;
 import io.paperdb.Paper;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainLanguageChange extends AppCompatActivity {
+
+
 
 
 
@@ -36,16 +38,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-        @Override
+    @Override
 
-        protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_main);
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
 
         // refer to OnClick button to change activities
+//        configurebutton_begin_settings();
+//        configurebutton_home_settings();
 
-//        configurebutton_activity_language();
-        configurebutton_begin();
 
         // Finds strings to translate
 
@@ -103,30 +105,27 @@ public class MainActivity extends AppCompatActivity {
 
         }
         return true;
-    }
-//    // On click button - Change Language - sends to change language activity
-//    private void configurebutton_activity_language() {
-//        Button btn_language_settings = findViewById(R.id.activity_change_language);
-//        btn_language_settings.setOnClickListener(new View.OnClickListener() {
+//    }
+////    // On click button - Change Language - sends to change language activity
+//    private void configurebutton_begin_settings() {
+//        Button back_home = findViewById(R.id.settings_begin);
+//        back_home.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View activity_change_language) {
-//                startActivity(new Intent(MainActivity.this, MainLanguageChange.class));
+//                startActivity(new Intent(MainLanguageChange.this, MainActivity.class));
 //            }
 //        });
 //    }
-
-    // On click button - Begin - sends to calculation activity
-    private void configurebutton_begin() {
-        Button btn_calculator = findViewById(R.id.begin);
-        btn_calculator.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View begin) {
-                startActivity(new Intent(MainActivity.this, MainCalculatorResult.class));
-            }
-        });
+//
+////    // On click button - Begin - sends to calculation activity
+//    private void configurebutton_home_settings() {
+//        Button btn_begin_language = findViewById(R.id.begin);
+//        btn_begin_language.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View begin) {
+//                startActivity(new Intent(MainLanguageChange.this, MainCalculatorResult.class));
+//            }
+//        });
     }
 
 }
-
-
-

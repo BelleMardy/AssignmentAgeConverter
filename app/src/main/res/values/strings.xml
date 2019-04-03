@@ -22,7 +22,7 @@
     <string name="medium">Medium dog (10 kg to 24.9 kg)</string>
     <string name="large">Large dog (25 kg to 39.9 kg)</string>
     <string name="txt_year">Year(s)</string>
-    <string name="blank" />
+    <string name="blank" translatable="false" />
     <string name="one_year">year</string>
     <string name="years">years</string>
     <string name="month">month</string>
@@ -33,8 +33,15 @@
     <!--Menu Layout-->
     <string name="language_english">English</string>
     <string name="language_spanish">Spanish</string>
+
     <string name="app_name">Dog Age To Human Age Converter</string>
 
+    <string name="activity_main_settings">Change Language</string>
+    <string name="btn_english">English</string>
+    <string name="btn_spanish">Spanish</string>
+    <string name="settings_home">Home</string>
+    <string name="setting_calculator">Begin</string>
+    <string name="setting_begin" translatable="false">Begin</string>
 
 </resources><!--<resources>-->
 
