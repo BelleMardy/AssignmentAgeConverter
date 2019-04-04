@@ -18,7 +18,11 @@ import android.widget.TextView;
 import au.edu.jcu.cp3406.assignmentageconverter.Helper.LocaleHelper;
 import io.paperdb.Paper;
 
+
+
 public class MainCalculatorResult extends AppCompatActivity {
+
+
     // Select variables that need to be translated
     SeekBar sb_weight;
     TextView val_weight;
@@ -57,6 +61,7 @@ public class MainCalculatorResult extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_age_calculator);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         sb_weight = this.findViewById(R.id.seekbar_weight);
         val_weight = this.findViewById(R.id.value_seekbar_weight);
@@ -70,6 +75,7 @@ public class MainCalculatorResult extends AppCompatActivity {
         // refer to OnClick button to change activities
 
         configurebutton_home();
+        configurebutton_settings_change_language_calculator();
 
         // Finds strings to translate
         tV_header_main = findViewById(R.id.header_main);
@@ -78,7 +84,7 @@ public class MainCalculatorResult extends AppCompatActivity {
         tV_dog_age_months = findViewById(R.id.dog_age_months);
         tV_calculate_human_age = findViewById(R.id.calculate_human_age);
         tV_home = findViewById(R.id.home);
-        tV_change_language = findViewById(R.id.activity_change_language);
+        tV_change_language = findViewById(R.id.activity_change_language_calculator);
 
 
         // Init Paper first:
@@ -273,6 +279,17 @@ public class MainCalculatorResult extends AppCompatActivity {
 //_______________________________________________________________________________________
 
 
+
+//    // On click button - Begin - sends to calculation activity
+    private void configurebutton_settings_change_language_calculator () {
+        Button btn_change_language_calculator = findViewById(R.id.activity_change_language_calculator);
+        btn_change_language_calculator.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View settings_change_language_calculator) {
+                startActivity(new Intent(MainCalculatorResult.this, MainLanguageChange.class));
+            }
+            });
+        }
 //_______________________________________________________________________________________
 
 
@@ -290,6 +307,7 @@ public class MainCalculatorResult extends AppCompatActivity {
 }
 
 
+//_______________________________________________________________________________________
 
 
 

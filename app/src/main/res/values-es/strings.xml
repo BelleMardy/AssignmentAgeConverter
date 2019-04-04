@@ -19,7 +19,7 @@
     <string name="select_dog_weight">Seleccione el Peso del Perro</string>
     <string name="dog_age_years">Seleccione la Edad del Perro\nAño(s)</string>
     <string name="dog_age_months">Seleccione la Edad del Perro\nMes(es)</string>
-    <string name="calculate_human_age">Calculado\nAños humanos</string>
+    <string name="calculate_human_age">Calculado Años Humanos</string>
     <string name="value_human_age"><font size="20">Edad Humana</font></string>
     <string name="small">Perro pequeño (menos de 9,9 kg)</string>
     <string name="no_age">Sin peso introducido</string>
@@ -34,17 +34,16 @@
     <string name="xlarge">Perro X-Large (más de 40 kg)</string>
 
     <!--Menu Layout-->
-    <string name="language_english">English</string>
-    <string name="language_spanish">Spanish</string>
-    <!--<string name="language_home">Casa</string>-->
-    <!--<string name="language_calculator">Calculadora</string>-->
-    <!--<string name="language_background">Fondo</string>-->
+    <string name="language_english">Inglés</string>
+    <string name="language_spanish">Español</string>
+
     <string name="activity_main_settings">Cambiar de Idioma</string>
-    <string name="btn_english">English</string>
-    <string name="btn_spanish">Spanish</string>
+    <string name="settings_spanish">Español</string>
     <string name="settings_home">Casa</string>
-    <string name="setting_begin">Iniciar</string>
-    <string name="setting_calculator">Iniciar</string>
+
+    <string name="settings_begin">Iniciar</string>
+    <string name="settings_english">Inglés</string>
+    <string name="settings_calculator">Calculadora</string>
 
 
 </resources>

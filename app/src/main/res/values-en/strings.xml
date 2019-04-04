@@ -18,7 +18,7 @@
     <string name="select_dog_weight">Select Dog Weight</string>
     <string name="dog_age_years">Select Dog Age\nYear(s)</string>
     <string name="dog_age_months">Select Dog Age\nMonth(s)</string>
-    <string name="calculate_human_age">Calculated\nHuman Age</string>
+    <string name="calculate_human_age">Calculate Human Age</string>
     <string name="value_human_age"><font size="20">Human Age</font></string>
     <string name="small">Small dog (under 9.9 kg)</string>
     <string name="no_age">No weight entered</string>
@@ -39,11 +39,13 @@
     <string name="app_name">Dog Age To Human Age Converter</string>
 
     <string name="activity_main_settings">Change Language</string>
-    <string name="btn_english">English</string>
-    <string name="btn_spanish">Spanish</string>
+    <string name="settings_spanish">Spanish</string>
     <string name="settings_home">Home</string>
-    <string name="setting_begin">Begin</string>
-    <string name="setting_calculator">Begin</string>
+
+    <string name="settings_begin">Begin</string>
+
+    <string name="settings_english">English</string>
+    <string name="settings_calculator">Calculator</string>
 
 
 </resources>

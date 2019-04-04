@@ -20,13 +20,11 @@ import io.paperdb.Paper;
 public class MainActivity extends AppCompatActivity {
 
 
-
     // Select variables that need to be translated
     TextView tV_begin;
     TextView tV_header;
     TextView tV_instructions;
-    TextView tV_change_language;
-
+    TextView tV_change_language_main;
 
 
     // Uses MainApplication code to set language as English
@@ -36,23 +34,24 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-        @Override
+    @Override
 
-        protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_main);
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
 
         // refer to OnClick button to change activities
 
-//        configurebutton_activity_language();
+
         configurebutton_begin();
+        configurebutton_settings_change_language_main();
 
         // Finds strings to translate
 
         tV_begin = findViewById(R.id.begin);
         tV_header = findViewById(R.id.header_main);
         tV_instructions = findViewById(R.id.instructions);
-        tV_change_language = findViewById(R.id.activity_change_language);
+        tV_change_language_main = findViewById(R.id.settings_change_language_main);
 
 
         // Init Paper first:
@@ -77,7 +76,8 @@ public class MainActivity extends AppCompatActivity {
         tV_begin.setText(resources.getString(R.string.begin));
         tV_header.setText(resources.getString(R.string.header_main));
         tV_instructions.setText(resources.getString(R.string.instructions));
-        tV_change_language.setText(R.string.activity_main_settings);
+        tV_change_language_main.setText(R.string.activity_main_settings);
+
 
     }
 
@@ -86,8 +86,8 @@ public class MainActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu settings_menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.settings, settings_menu);
-        return true;    }
-
+        return true;
+    }
 
 
     // Activate settings in action bar to change language ie English/Spanish
@@ -104,17 +104,19 @@ public class MainActivity extends AppCompatActivity {
         }
         return true;
     }
-//    // On click button - Change Language - sends to change language activity
-//    private void configurebutton_activity_language() {
-//        Button btn_language_settings = findViewById(R.id.activity_change_language);
-//        btn_language_settings.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View activity_change_language) {
-//                startActivity(new Intent(MainActivity.this, MainLanguageChange.class));
-//            }
-//        });
-//    }
 
+    // On click button - Settings - sends to calculation activity
+    private void configurebutton_settings_change_language_main() {
+        Button btn_change_language_main = findViewById(R.id.settings_change_language_main);
+        btn_change_language_main.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View settings_change_language_main) {
+                startActivity(new Intent(MainActivity.this, MainLanguageChange.class));
+
+            }
+        });
+
+    }
     // On click button - Begin - sends to calculation activity
     private void configurebutton_begin() {
         Button btn_calculator = findViewById(R.id.begin);
@@ -125,6 +127,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
 
 }
 
