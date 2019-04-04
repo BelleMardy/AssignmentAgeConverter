@@ -95,6 +95,8 @@ public class MainCalculatorResult extends AppCompatActivity {
         if (null == language) {
         }
         Paper.book().write("language", "en");
+        updateView((String)Paper.book().read("language"));
+
 
 
         // LocalHelper used to translate language

@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
         }
         Paper.book().write("language", "en");
 
-
+updateView((String)Paper.book().read("language"));
     }
 
     // LocalHelper used to translate language
